@@ -15,3 +15,4 @@ prompt-toolkit
 ipykernel
 traitlets
 paramiko
+adal
