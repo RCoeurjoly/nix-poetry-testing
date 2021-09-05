@@ -54,3 +54,4 @@ futures
 pyopenssl
 paramiko
 adal
+google-cloud-bigquery
