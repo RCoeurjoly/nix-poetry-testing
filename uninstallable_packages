@@ -48,3 +48,4 @@ pytest-mock
 ansible
 apache-beam
 pytest-xdist
+azureml-core
