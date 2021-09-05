@@ -82,3 +82,4 @@ scrapy
 ml-metadata
 tfx
 azure-mgmt-trafficmanager
+pystan
