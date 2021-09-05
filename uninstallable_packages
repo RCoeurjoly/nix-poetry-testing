@@ -67,3 +67,4 @@ moto
 authlib
 pymssql
 twine
+pywin32
