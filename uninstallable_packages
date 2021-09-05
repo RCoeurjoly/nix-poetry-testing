@@ -27,3 +27,4 @@ msal
 secretstorage
 msrestazure
 pyodbc
+msal-extensions
