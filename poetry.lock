@@ -29,21 +29,12 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
-name = "importlib-metadata"
-version = "4.6.3"
-description = "Read metadata from Python packages"
-category = "dev"
+name = "faiss-cpu"
+version = "1.7.1.post2"
+description = "A library for efficient similarity search and clustering of dense vectors."
+category = "main"
 optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-perf = ["ipython"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pep517", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
+python-versions = "*"
 
 [[package]]
 name = "more-itertools"
@@ -60,9 +51,6 @@ description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.dependencies]
-importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
 dev = ["pre-commit", "tox"]
@@ -100,30 +88,10 @@ category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
-[[package]]
-name = "typing-extensions"
-version = "3.10.0.0"
-description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "zipp"
-version = "3.5.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
-
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.6,<4.0"
-content-hash = "baa316f47ed96d789a82fdba9500ec558108a9f5e332cf1705c58057f76ce217"
+python-versions = ">=3.9,<3.10"
+content-hash = "5866890a465681c7e3a763eeebf2b131fff577072fc2e2a84526cf0476c2c844"
 
 [metadata.files]
 atomicwrites = [
@@ -138,9 +106,20 @@ colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
-importlib-metadata = [
-    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
-    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
+faiss-cpu = [
+    {file = "faiss-cpu-1.7.1.post2.tar.gz", hash = "sha256:34353d8080f529d2aac8be2e42d6cd1ef291a65c05f84d9fcc8d4f1578c2b6ec"},
+    {file = "faiss_cpu-1.7.1.post2-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:63e557212ae0ca2feda7bcf5b5bdd1a41ba4ee8f73bec7d10e8b5282cd29dd59"},
+    {file = "faiss_cpu-1.7.1.post2-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e0cc3c9b1518bd76c215ad2bfc9bb4df447baa1556a50eb090a9df97fd09cb84"},
+    {file = "faiss_cpu-1.7.1.post2-cp36-cp36m-win_amd64.whl", hash = "sha256:82e82971db59eeb9ed348a1a05c495f240be871f0a5d10ac0f6edd93a79250f7"},
+    {file = "faiss_cpu-1.7.1.post2-cp37-cp37m-macosx_10_14_x86_64.whl", hash = "sha256:06ede8b6699ca9cf24ea7fc6dc55e063df100f7bdaeccda8eb5a1459274361a4"},
+    {file = "faiss_cpu-1.7.1.post2-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:996c06b26616bc75e757e58292ce25cd685c4326fafbe2dcfab2602ad2c5c211"},
+    {file = "faiss_cpu-1.7.1.post2-cp37-cp37m-win_amd64.whl", hash = "sha256:ee98b833622c01f9d0853c036d1ae05a1e111d6557d4d9705cbfe55714125491"},
+    {file = "faiss_cpu-1.7.1.post2-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:e28d21ab3f0d327f3a550bc467f1dc1955dbaeccf5b596027e142689b1c3eb23"},
+    {file = "faiss_cpu-1.7.1.post2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a40deb7d9023e3a869e51fad3b8643fbc7958274f8ca5cb89fe02103345de7ed"},
+    {file = "faiss_cpu-1.7.1.post2-cp38-cp38-win_amd64.whl", hash = "sha256:13b3878884f9f152ecedd4aeeddda57ffd93425ef474965ad663bb13640b5503"},
+    {file = "faiss_cpu-1.7.1.post2-cp39-cp39-macosx_10_14_x86_64.whl", hash = "sha256:3f9267f712e73cd37754fdcf1ffd3e229de98e70cc0b02699301fd23f38748e1"},
+    {file = "faiss_cpu-1.7.1.post2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:af0211237982d9a250c3515ccceff69867dc0889cdb9a908e0ccf81f81a0b856"},
+    {file = "faiss_cpu-1.7.1.post2-cp39-cp39-win_amd64.whl", hash = "sha256:00665a70992aef10762d9c72a2733604b6fd7831a682aa8d0636596389fd336d"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
@@ -161,13 +140,4 @@ pytest = [
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
-]
-typing-extensions = [
-    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
-    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
-    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
-]
-zipp = [
-    {file = "zipp-3.5.0-py3-none-any.whl", hash = "sha256:957cfda87797e389580cb8b9e3870841ca991e2125350677b2ca83a0e99390a3"},
-    {file = "zipp-3.5.0.tar.gz", hash = "sha256:f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"},
 ]
