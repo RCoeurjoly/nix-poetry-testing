@@ -63,3 +63,4 @@ msal-extensions
 azure-identity
 snowflake-connector-python
 psycopg2
+pytest-cov
