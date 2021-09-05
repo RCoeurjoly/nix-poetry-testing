@@ -67,7 +67,7 @@ test_packages () {
 add_package_to_uninstallable_list() {
     uninstallable_package=$1
     echo $uninstallable_package >> uninstallable_packages
-    echo git checkout -- poetry.lock
-    echo git add uninstallable_packages
-    echo git commit -m \"Uninstallable $uninstallable_package\"
+    git checkout -- poetry.lock
+    git add uninstallable_packages
+    git commit -m \"Uninstallable $uninstallable_package\"
 }
