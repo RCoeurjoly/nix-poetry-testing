@@ -21,3 +21,4 @@ azure-storage-blob
 pytest
 futures
 pyopenssl
+paramiko
