@@ -24,3 +24,4 @@ pyopenssl
 paramiko
 adal
 msal
+secretstorage
