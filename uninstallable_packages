@@ -46,3 +46,4 @@ pysftp
 azure-keyvault
 pytest-mock
 ansible
+apache-beam
