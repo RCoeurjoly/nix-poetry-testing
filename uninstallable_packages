@@ -21,3 +21,4 @@ isort
 nbconvert
 networkx
 jupyter-client
+nbclient
