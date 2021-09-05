@@ -26,3 +26,4 @@ mlflow
 msal
 secretstorage
 msrestazure
+pyodbc
