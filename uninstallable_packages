@@ -6,3 +6,4 @@ cryptography
 azure-storage-blob
 scipy
 matplotlib
+pytest
