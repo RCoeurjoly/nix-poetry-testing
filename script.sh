@@ -18,7 +18,6 @@ test_packages () {
     fi
 
     while getopts ":f:p:h" o; do
-        echo WHET THE FUCK2.0
         case "${o}" in
             f)
                 packages=$(cat "$OPTARG" | jq .rows[].project)
