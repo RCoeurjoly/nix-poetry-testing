@@ -49,3 +49,4 @@ ansible
 apache-beam
 pytest-xdist
 azureml-core
+azure-cosmosdb-table
