@@ -9,13 +9,13 @@ check_uninstallable_packages () {
     done
 }
 
-function usage {
-    echo "shows usage"; exit 1
+usage () {
+    echo "shows usage"
 }
 
 test_packages () {
     # If no argument, parse big json
-    echo $#
+    # echo $#
     if [ "$#" -eq 0 ]; then
         packages=$(cat packages.json | jq .rows[].project)
     fi
@@ -34,19 +34,6 @@ test_packages () {
         esac
     done
 
-    # while getopts ":f:p:" opt; do
-    #     case $opt in
-    #         f) echo looool
-    #             packages=$(cat "$OPTARG" | jq .rows[].project); echo loool1
-    #            ;;
-    #         p) packages="$OPTARG"; echo loool2
-    #            ;;
-    #         \?) echo "Invalid option -$OPTARG" >&2
-    #             ;;
-    #     esac
-    # done
-
-    echo Packages are $packages
     for quoted_package in $packages
     do
         unquoted_package=${quoted_package//\"}
