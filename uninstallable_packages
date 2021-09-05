@@ -46,3 +46,4 @@ tensorflow-model-analysis
 azure-storage-queue
 typing
 websockets
+black
