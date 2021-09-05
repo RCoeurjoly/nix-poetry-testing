@@ -33,3 +33,4 @@ snowflake-connector-python
 psycopg2
 pytest-cov
 azure-storage-common
+tfx-bsl
