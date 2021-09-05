@@ -26,3 +26,4 @@ adal
 msal
 secretstorage
 msrestazure
+pyodbc
