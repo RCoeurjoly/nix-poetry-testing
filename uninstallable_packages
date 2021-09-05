@@ -40,3 +40,4 @@ h5py
 tensorflow-transform
 pydantic
 keyring
+pandas-gbq
