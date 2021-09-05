@@ -94,3 +94,4 @@ functools32
 azure-mgmt-batchai
 azure-kusto-ingest
 uwsgi
+azure-mgmt-iotcentral
