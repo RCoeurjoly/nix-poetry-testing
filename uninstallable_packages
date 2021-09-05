@@ -28,3 +28,4 @@ secretstorage
 msrestazure
 pyodbc
 msal-extensions
+azure-identity
