@@ -18,3 +18,4 @@ azure-storage-common
 tfx-bsl
 cryptography
 azure-storage-blob
+pytest
