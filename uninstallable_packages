@@ -76,3 +76,4 @@ pycurl
 scp
 pathlib
 sasl
+docker-compose
