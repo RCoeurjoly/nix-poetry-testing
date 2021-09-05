@@ -64,3 +64,4 @@ sekkaybot
 poetry
 snowflake-sqlalchemy
 moto
+authlib
