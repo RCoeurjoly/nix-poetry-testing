@@ -83,3 +83,4 @@ ml-metadata
 tfx
 azure-mgmt-trafficmanager
 pystan
+pytest-asyncio
