@@ -39,3 +39,4 @@ dataclasses
 h5py
 tensorflow-transform
 pydantic
+keyring
