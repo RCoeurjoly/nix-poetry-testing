@@ -48,3 +48,4 @@ black
 statsmodelsnumpy
 cryptography
 azure-storage-blob
+scipy
