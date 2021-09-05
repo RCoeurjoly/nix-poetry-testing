@@ -37,3 +37,4 @@ tfx-bsl
 tensorflow-transform
 keyring
 tensorflow-data-validation
+tensorflow-model-analysis
