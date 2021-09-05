@@ -3,3 +3,4 @@ networkx
 pandas
 numpy
 cryptography
+azure-storage-blob
