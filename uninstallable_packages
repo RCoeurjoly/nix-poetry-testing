@@ -100,3 +100,4 @@ chex
 pytest-html
 azure-storage
 optax
+azureml-telemetry
