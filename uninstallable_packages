@@ -7,3 +7,4 @@ azure-storage-blob
 scipy
 matplotlib
 pytest
+kiwisolver
