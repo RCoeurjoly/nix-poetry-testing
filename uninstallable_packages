@@ -47,3 +47,4 @@ azure-keyvault
 pytest-mock
 ansible
 apache-beam
+pytest-xdist
