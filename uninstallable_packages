@@ -19,3 +19,4 @@ adal
 google-cloud-bigquery
 isort
 nbconvert
+networkx
