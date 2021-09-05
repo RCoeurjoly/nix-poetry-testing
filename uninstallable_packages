@@ -49,3 +49,4 @@ statsmodels
 pandas
 numpy
 cryptography
+azure-storage-blob
