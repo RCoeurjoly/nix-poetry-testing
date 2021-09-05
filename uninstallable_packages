@@ -75,3 +75,4 @@ azure-batch
 pycurl
 scp
 pathlib
+sasl
