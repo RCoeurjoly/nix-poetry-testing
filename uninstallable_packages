@@ -32,3 +32,4 @@ azure-identity
 snowflake-connector-python
 psycopg2
 pytest-cov
+azure-storage-common
