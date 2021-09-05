@@ -18,3 +18,4 @@ paramiko
 adal
 google-cloud-bigquery
 isort
+nbconvert
