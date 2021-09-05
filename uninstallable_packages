@@ -102,3 +102,4 @@ azure-storage
 optax
 azureml-telemetry
 flax
+service-identity
