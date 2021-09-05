@@ -56,3 +56,4 @@ paramiko
 adal
 google-cloud-bigquery
 msal
+secretstorage
