@@ -44,3 +44,4 @@ pandas-gbq
 tensorflow-data-validation
 tensorflow-model-analysis
 azure-storage-queue
+typing
