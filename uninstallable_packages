@@ -10,3 +10,4 @@ pytest
 kiwisolver
 futures
 ipython
+pyopenssl
