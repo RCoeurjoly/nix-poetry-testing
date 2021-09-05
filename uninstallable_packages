@@ -58,3 +58,4 @@ google-cloud-bigquery
 msal
 secretstorage
 msrestazure
+pyodbc
