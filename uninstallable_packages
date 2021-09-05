@@ -63,3 +63,4 @@ pygobject
 sekkaybot
 poetry
 snowflake-sqlalchemy
+moto
