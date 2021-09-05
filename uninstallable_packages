@@ -20,3 +20,4 @@ google-cloud-bigquery
 isort
 nbconvert
 networkx
+jupyter-client
