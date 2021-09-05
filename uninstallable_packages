@@ -50,3 +50,4 @@ cryptography
 azure-storage-blob
 scipy
 pytest
+futures
