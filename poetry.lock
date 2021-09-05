@@ -29,21 +29,12 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
-name = "importlib-metadata"
-version = "4.6.3"
-description = "Read metadata from Python packages"
-category = "dev"
+name = "ephem"
+version = "4.0.0.2"
+description = "Compute positions of the planets and stars"
+category = "main"
 optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-perf = ["ipython"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pep517", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
+python-versions = "*"
 
 [[package]]
 name = "more-itertools"
@@ -60,9 +51,6 @@ description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.dependencies]
-importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
 dev = ["pre-commit", "tox"]
@@ -100,30 +88,10 @@ category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
-[[package]]
-name = "typing-extensions"
-version = "3.10.0.0"
-description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "zipp"
-version = "3.5.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
-
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.6,<4.0"
-content-hash = "baa316f47ed96d789a82fdba9500ec558108a9f5e332cf1705c58057f76ce217"
+python-versions = ">=3.9,<3.10"
+content-hash = "8015c5e20ec6ddb67d17b38745ae6c1cf7a42f1862aba0e7b3d817a7295603b4"
 
 [metadata.files]
 atomicwrites = [
@@ -138,9 +106,48 @@ colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
-importlib-metadata = [
-    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
-    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
+ephem = [
+    {file = "ephem-4.0.0.2-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:8d7febea4305f9257c28fe002dba531d8ee0f136d0e681a03dd9449459ab4ccb"},
+    {file = "ephem-4.0.0.2-cp27-cp27m-manylinux2010_i686.whl", hash = "sha256:f38cf6f3696ba3ea0829de0c1dcc2a729b45938b3fc22db4081858aae4bd5b92"},
+    {file = "ephem-4.0.0.2-cp27-cp27m-manylinux2010_x86_64.whl", hash = "sha256:02a0500965d624e0033f18e297afc80695f976d24eeb4f4c6c1c2edaae69d7df"},
+    {file = "ephem-4.0.0.2-cp27-cp27mu-manylinux2010_i686.whl", hash = "sha256:065e0a36886e4dd03e8f3ccda44112f24557838332e45ca7844dd03f5f95f393"},
+    {file = "ephem-4.0.0.2-cp27-cp27mu-manylinux2010_x86_64.whl", hash = "sha256:cef85182ec6f724b961d48a609ac50b45aaafe0d6c4e988ad2a42856149e8280"},
+    {file = "ephem-4.0.0.2-cp35-cp35m-macosx_10_9_x86_64.whl", hash = "sha256:6ddc93438de184b44397352fd204b6e08c264a70bf52862f1ae729a83f5b83cd"},
+    {file = "ephem-4.0.0.2-cp35-cp35m-manylinux2010_i686.whl", hash = "sha256:2d679fbbc87161a9d48f462f972ce58b39e46df6a1025f55462478e86098cc52"},
+    {file = "ephem-4.0.0.2-cp35-cp35m-manylinux2010_x86_64.whl", hash = "sha256:665485e788c7fc27d0885f8932346babe76d15def396179ead60ff7222b86165"},
+    {file = "ephem-4.0.0.2-cp35-cp35m-manylinux2014_aarch64.whl", hash = "sha256:75736183d327da14afc99751bbdddc2bfa91b7f978f216f7ee7e404e8155903b"},
+    {file = "ephem-4.0.0.2-cp35-cp35m-manylinux2014_s390x.whl", hash = "sha256:029dff6d8212ea9c63a8e34d1e0e416833b6b1888642ee0b7c69eb983f55eda7"},
+    {file = "ephem-4.0.0.2-cp35-cp35m-win32.whl", hash = "sha256:fa2163ed6562521a261f42d8a07d2b50991511f3e0725b1f64c07889fc9414ab"},
+    {file = "ephem-4.0.0.2-cp35-cp35m-win_amd64.whl", hash = "sha256:b33d79e92b9c5a5f4f65fe35b337ea743518307eb8cb6f41b77430673da35332"},
+    {file = "ephem-4.0.0.2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:669a664e020eacffe244f053ebdb67a7c2a0bade0297a8d58f9494043126ccdc"},
+    {file = "ephem-4.0.0.2-cp36-cp36m-manylinux2010_i686.whl", hash = "sha256:6732de67ea31d84ae091b1efb1a3c55eca6f0b9db2551f23e6fbe46cdb1340b0"},
+    {file = "ephem-4.0.0.2-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:65e5dad6f47932ebb1a0f91af67fa1d6ef4bdfa25035f978c6e33002607c62b9"},
+    {file = "ephem-4.0.0.2-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:e1e4d92e04f187aaa1779f272778214b11f53456c0edbe29c7630a20fd5a29f0"},
+    {file = "ephem-4.0.0.2-cp36-cp36m-manylinux2014_s390x.whl", hash = "sha256:32f534d418bd75d37fe9379508eef6bd58fdc4c6f5f8ccee8167a426c3dbae18"},
+    {file = "ephem-4.0.0.2-cp36-cp36m-win32.whl", hash = "sha256:1d5410a30977cc9c4b5d34b1fc9c450cfe3f0764c750fe8706276703ffb9faf4"},
+    {file = "ephem-4.0.0.2-cp36-cp36m-win_amd64.whl", hash = "sha256:6dd2c480ec6193e5f13e182605b4a6aa2fc682b9d4b24c95b16eb8706b27d548"},
+    {file = "ephem-4.0.0.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:7be194fba66d682ea7144b43b42ff936e1900c2b714afa3c9dd48f167be9ecc9"},
+    {file = "ephem-4.0.0.2-cp37-cp37m-manylinux2010_i686.whl", hash = "sha256:ee47fcf845e94781672f84138e9d5b5f0ab3a9f46f8a63f6a49fddd9cb302cbc"},
+    {file = "ephem-4.0.0.2-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:7383a7e119eebce8e1153f7deff1ee0c764ef339b57e0efe9787b0a60a8bee46"},
+    {file = "ephem-4.0.0.2-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:f3461bdc9cbd986517379e16817a03ce2d579ab91f6b4dd9717e60a02a51a5ce"},
+    {file = "ephem-4.0.0.2-cp37-cp37m-manylinux2014_s390x.whl", hash = "sha256:cc5fe92b349d072797d1297357a75f50daa662fca3c87fc0dcedb4edc5f39869"},
+    {file = "ephem-4.0.0.2-cp37-cp37m-win32.whl", hash = "sha256:f5f76e5c65da92934946e76d093f68624645ba441102d7821a6d0f2d11ab655f"},
+    {file = "ephem-4.0.0.2-cp37-cp37m-win_amd64.whl", hash = "sha256:a70b0b1d06256086422e2bb55fb8451bbd20c63144cba047cc174f4bb1035a61"},
+    {file = "ephem-4.0.0.2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:c67ada1549928228b885ffe7264bdcd99321e0eade410ce9d74018a6cd3cf422"},
+    {file = "ephem-4.0.0.2-cp38-cp38-manylinux2010_i686.whl", hash = "sha256:1670ef5b538c5a011e0aed92f3f71ce21f973c097d21c3953e9da9ee6577f0b4"},
+    {file = "ephem-4.0.0.2-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:86df088522ae40443649be14da0a584acc3c2e89676b523293437be9cf40908a"},
+    {file = "ephem-4.0.0.2-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:1d5e33e5dfbdcb3c185f2b138037ef54d4a258478704ca8206a82a41db6e41fe"},
+    {file = "ephem-4.0.0.2-cp38-cp38-manylinux2014_s390x.whl", hash = "sha256:dcd372ea57185ec12dc0bf9bc9fc57f00d8efd5291a742828731fb3840a789cb"},
+    {file = "ephem-4.0.0.2-cp38-cp38-win32.whl", hash = "sha256:375e486e45bbfe2fae98e063d1963bddfff05e160fb17191da61b6fb03e37516"},
+    {file = "ephem-4.0.0.2-cp38-cp38-win_amd64.whl", hash = "sha256:be60729ca6569b1fbbdd34ad965f4d12aa739ce919b0b6182b0ac32c6fc2530a"},
+    {file = "ephem-4.0.0.2-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:d21ec00ba43d7034dd51594339eab786930a6ae0569a4b168cbb20932be0671c"},
+    {file = "ephem-4.0.0.2-cp39-cp39-manylinux2010_i686.whl", hash = "sha256:ea90124c1e23cc599757ddfbd34ecef7452b82d2205e1abdb5ad6880ae74942b"},
+    {file = "ephem-4.0.0.2-cp39-cp39-manylinux2010_x86_64.whl", hash = "sha256:1066dd87d1d8a52cef8bed27c3135601d6124c5e9b25d989ab1f9f54461d674f"},
+    {file = "ephem-4.0.0.2-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:582ef4ffc52e9cb737291a4763aa28e3dfbad04d3713d88661311d8cfd9894c4"},
+    {file = "ephem-4.0.0.2-cp39-cp39-manylinux2014_s390x.whl", hash = "sha256:27fd1afa205b31fbfd3ed6618470b29738112b0bc07b330960ff95053446683e"},
+    {file = "ephem-4.0.0.2-cp39-cp39-win32.whl", hash = "sha256:e10fc9715abcc924dfffcde8438a7e0afe574ee99afc945a729fa88739fc3289"},
+    {file = "ephem-4.0.0.2-cp39-cp39-win_amd64.whl", hash = "sha256:f1d9fec04e41a8b00e366ba9c2aece5a937cd36504173f6310e7aeb218c2fc2c"},
+    {file = "ephem-4.0.0.2.tar.gz", hash = "sha256:d03de73ebf6a91681d597eb5b5d43bcf6f0c67e292bba2f9a974734b4f15757e"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
@@ -161,13 +168,4 @@ pytest = [
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
-]
-typing-extensions = [
-    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
-    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
-    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
-]
-zipp = [
-    {file = "zipp-3.5.0-py3-none-any.whl", hash = "sha256:957cfda87797e389580cb8b9e3870841ca991e2125350677b2ca83a0e99390a3"},
-    {file = "zipp-3.5.0.tar.gz", hash = "sha256:f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"},
 ]
