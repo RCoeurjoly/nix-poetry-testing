@@ -90,3 +90,4 @@ tensorflow-cloud
 azure-keyvault-keys
 azure-storage-file
 azure-mgmt-msi
+functools32
