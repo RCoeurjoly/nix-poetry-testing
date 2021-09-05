@@ -62,7 +62,6 @@ test_packages () {
             git checkout main
         fi
     done
-    echo WHET THE FUCK4
 }
 
 add_package_to_uninstallable_list() {
