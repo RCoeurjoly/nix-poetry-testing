@@ -80,3 +80,4 @@ docker-compose
 dm-tree
 scrapy
 ml-metadata
+tfx
