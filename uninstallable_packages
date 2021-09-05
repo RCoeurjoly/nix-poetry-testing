@@ -88,3 +88,4 @@ ml-pipelines-sdk
 ansible-core
 tensorflow-cloud
 azure-keyvault-keys
+azure-storage-file
