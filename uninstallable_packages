@@ -105,3 +105,4 @@ flax
 service-identity
 pytest-django
 atari-py
+azure
