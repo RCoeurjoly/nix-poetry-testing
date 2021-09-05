@@ -52,3 +52,4 @@ scipy
 pytest
 futures
 pyopenssl
+paramiko
