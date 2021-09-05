@@ -21,29 +21,20 @@ tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)"
 tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins"]
 
 [[package]]
+name = "azureml-dataprep-rslex"
+version = "1.20.1"
+description = "Azure ML Data Preparation RustLex"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "colorama"
 version = "0.4.4"
 description = "Cross-platform colored terminal text."
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-
-[[package]]
-name = "importlib-metadata"
-version = "4.6.3"
-description = "Read metadata from Python packages"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-perf = ["ipython"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pep517", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
 
 [[package]]
 name = "more-itertools"
@@ -60,9 +51,6 @@ description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.dependencies]
-importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
 dev = ["pre-commit", "tox"]
@@ -100,30 +88,10 @@ category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
-[[package]]
-name = "typing-extensions"
-version = "3.10.0.0"
-description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "zipp"
-version = "3.5.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
-
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.6,<4.0"
-content-hash = "baa316f47ed96d789a82fdba9500ec558108a9f5e332cf1705c58057f76ce217"
+python-versions = ">=3.9,<3.10"
+content-hash = "ed399525fa1a3fefd5a940276287c2bef39aa13de05cc671c021dd4180fb4a2d"
 
 [metadata.files]
 atomicwrites = [
@@ -134,13 +102,26 @@ attrs = [
     {file = "attrs-21.2.0-py2.py3-none-any.whl", hash = "sha256:149e90d6d8ac20db7a955ad60cf0e6881a3f20d37096140088356da6c716b0b1"},
     {file = "attrs-21.2.0.tar.gz", hash = "sha256:ef6aaac3ca6cd92904cdd0d83f629a15f18053ec84e6432106f7a4d04ae4f5fb"},
 ]
+azureml-dataprep-rslex = [
+    {file = "azureml_dataprep_rslex-1.20.1-cp35-cp35m-macosx_10_9_x86_64.whl", hash = "sha256:a964cf07dac47d5e50b7d93e9bef07bf9f895032b2e19cfb34447b0531507e10"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:9312b444ef8e86c1c07bd63f61fa42bdfd478ad0443a3283191c767fab7804ee"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp35-cp35m-win_amd64.whl", hash = "sha256:95a3e7b27e804f7987629ba715e2e7521f39e495b69308178a59797e15c7f7f7"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:a038b2941f8b9f3042087fd8995d555e878d33945426af211f601a73fa21afe7"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:dda9ccbed245da46b41f28be7ccae82318a87d6829e9e85960dc3fef76e05a0b"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp36-cp36m-win_amd64.whl", hash = "sha256:69c4980575eb3929c902f28d3d60f29909d9afe05b9e39506a1c3124d232340e"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:e0436c226dcd3fd2b0cce50d24f96fa82ca58ec48b3fe660229237d0d85bf59a"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:2be0650f9e046a28f10c308f2614fb667accee91999dd8c72fb6c2c903884e11"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp37-cp37m-win_amd64.whl", hash = "sha256:9b22ff2e00c269a82fd0f7390d2f8bc4f554d9a99ec6c61dc3d67f5de70bde7f"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:68f254da28d09d0dbc02eae81652f41225c7e6f707dfa849d8da807c4f9fb948"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:d63e6fe3f5a42643036722d82e2a989d18a0d974f0ee65e8c4e1985b5f681be0"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp38-cp38-win_amd64.whl", hash = "sha256:082f51bfe43c1d830205ef24c2385df08787b8a0aaebe2ab3d904c95a25050de"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:1c5eb0822ef8a120693042b3e820b04b3ce6d95fbcd34993d41f7c99209a7958"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:b32320087fff80d0dd69b47610ebdbfc129ada54cc49d4d284bee0cc6a241690"},
+    {file = "azureml_dataprep_rslex-1.20.1-cp39-cp39-win_amd64.whl", hash = "sha256:3ca4b0c0dd7ed1456c2dc03a6f579d63fb1fe308866ed8617286c19c39a2b6d7"},
+]
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
-]
-importlib-metadata = [
-    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
-    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
@@ -161,13 +142,4 @@ pytest = [
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
-]
-typing-extensions = [
-    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
-    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
-    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
-]
-zipp = [
-    {file = "zipp-3.5.0-py3-none-any.whl", hash = "sha256:957cfda87797e389580cb8b9e3870841ca991e2125350677b2ca83a0e99390a3"},
-    {file = "zipp-3.5.0.tar.gz", hash = "sha256:f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"},
 ]
