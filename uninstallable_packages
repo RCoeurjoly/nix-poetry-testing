@@ -35,3 +35,4 @@ pytest-cov
 azure-storage-common
 seaborn
 tfx-bsl
+dataclasses
