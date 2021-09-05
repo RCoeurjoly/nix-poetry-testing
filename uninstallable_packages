@@ -69,3 +69,4 @@ pymssql
 twine
 pywin32
 azure-kusto-data
+azure-mgmt-datalake-analytics
