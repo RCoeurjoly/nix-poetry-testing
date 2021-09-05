@@ -84,3 +84,4 @@ tfx
 azure-mgmt-trafficmanager
 pystan
 pytest-asyncio
+ml-pipelines-sdk
