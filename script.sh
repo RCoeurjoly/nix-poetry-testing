@@ -13,7 +13,7 @@ do
         if [[ $rc != 0 ]]; then
             echo Package $unquoted_package failed to install with poetry
             echo $unquoted_package >> uninstallable_packages
-            git add --all
+            git add uninstallable_packages
             git commit -m \"Uninstallable $unquoted_package\"
             git checkout main
             git merge $unquoted_package
