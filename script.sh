@@ -58,8 +58,8 @@ test_packages () {
                 git add --all
                 git commit -m $unquoted_package
                 git push
+                git checkout main
             fi
-            git checkout main
         fi
     done
 }
