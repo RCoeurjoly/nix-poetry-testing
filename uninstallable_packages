@@ -20,3 +20,4 @@ cryptography
 azure-storage-blob
 pytest
 futures
+pyopenssl
