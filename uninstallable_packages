@@ -65,3 +65,4 @@ poetry
 snowflake-sqlalchemy
 moto
 authlib
+pymssql
