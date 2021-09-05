@@ -44,3 +44,4 @@ azure-graphrbac
 ndg-httpsclient
 pysftp
 azure-keyvault
+pytest-mock
