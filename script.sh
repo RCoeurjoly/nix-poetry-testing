@@ -10,7 +10,23 @@ check_uninstallable_packages () {
 }
 
 test_packages () {
-    for quoted_package in $(cat packages_small.json | jq .rows[].project)
+    # If no argument, parse big json
+    if [ "$#" -eq 1 ]; then
+        packages=$(cat packages.json | jq .rows[].project)
+    fi
+
+    while getopts ":f:p:" opt; do
+        case $opt in
+            f) packages=$(cat "$OPTARG" | jq .rows[].project)
+               ;;
+            p) packages="$OPTARG"
+               ;;
+            \?) echo "Invalid option -$OPTARG" >&2
+                ;;
+        esac
+    done
+    echo Packages are $packages
+    for quoted_package in $packages
     do
         unquoted_package=${quoted_package//\"}
         git rev-parse --quiet --verify $unquoted_package
@@ -24,10 +40,7 @@ test_packages () {
             rc=$?
             if [[ $rc != 0 ]]; then
                 echo Package $unquoted_package failed to install with poetry
-                echo $unquoted_package >> uninstallable_packages
-                git checkout -- poetry.lock
-                git add uninstallable_packages
-                git commit -m \"Uninstallable $unquoted_package\"
+                add_package_to_uninstallable_list $unquoted_package
                 git checkout main
                 git merge $unquoted_package
                 git branch -d $unquoted_package
@@ -39,4 +52,12 @@ test_packages () {
             git checkout main
         fi
     done
+}
+
+add_package_to_uninstallable_list() {
+    uninstallable_package=$1
+    echo $uninstallable_package >> uninstallable_packages
+    git checkout -- poetry.lock
+    git add uninstallable_packages
+    git commit -m \"Uninstallable $uninstallable_package\"
 }
