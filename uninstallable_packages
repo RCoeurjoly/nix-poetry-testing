@@ -41,3 +41,4 @@ tensorflow-transform
 pydantic
 keyring
 pandas-gbq
+tensorflow-data-validation
