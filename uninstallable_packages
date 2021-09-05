@@ -23,3 +23,4 @@ networkx
 jupyter-client
 nbclient
 mlflow
+msal
