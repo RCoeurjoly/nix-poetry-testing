@@ -9,3 +9,4 @@ matplotlib
 pytest
 kiwisolver
 futures
+ipython
