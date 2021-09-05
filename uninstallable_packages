@@ -45,3 +45,4 @@ ndg-httpsclient
 pysftp
 azure-keyvault
 pytest-mock
+ansible
