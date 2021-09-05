@@ -103,3 +103,4 @@ optax
 azureml-telemetry
 flax
 service-identity
+pytest-django
