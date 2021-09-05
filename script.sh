@@ -9,18 +9,16 @@ check_uninstallable_packages () {
     done
 }
 
-usage () {
-    echo "shows usage"
-}
-
 test_packages () {
+    OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
     # If no argument, parse big json
-    # echo $#
     if [ "$#" -eq 0 ]; then
         packages=$(cat packages.json | jq .rows[].project)
     fi
 
-    while getopts ":f:p:" o; do
+    while getopts ":f:p:h" o; do
+        echo WHET THE FUCK2.0
         case "${o}" in
             f)
                 packages=$(cat "$OPTARG" | jq .rows[].project)
@@ -28,11 +26,16 @@ test_packages () {
             p)
                 packages="$OPTARG"
                 ;;
+            h)
+                echo usage
+                ;;
             *)
-                usage
+                echo fail
                 ;;
         esac
     done
+
+    shift $((OPTIND-1))
 
     for quoted_package in $packages
     do
@@ -60,6 +63,7 @@ test_packages () {
             git checkout main
         fi
     done
+    echo WHET THE FUCK4
 }
 
 add_package_to_uninstallable_list() {
