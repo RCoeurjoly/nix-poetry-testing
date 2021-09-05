@@ -22,3 +22,4 @@ nbconvert
 networkx
 jupyter-client
 nbclient
+mlflow
