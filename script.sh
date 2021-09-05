@@ -7,6 +7,7 @@ do
         echo Package $unquoted_package is already handled
     else
         git checkout -b $unquoted_package
+        git push origin --delete $unquoted_package
         poetry add $unquoted_package
         rc=$?
         if [[ $rc != 0 ]]; then
