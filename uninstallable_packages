@@ -16,3 +16,4 @@ ipykernel
 traitlets
 paramiko
 adal
+google-cloud-bigquery
