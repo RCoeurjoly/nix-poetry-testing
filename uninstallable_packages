@@ -12,3 +12,4 @@ futures
 ipython
 pyopenssl
 prompt-toolkit
+ipykernel
