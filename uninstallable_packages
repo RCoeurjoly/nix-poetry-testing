@@ -46,3 +46,4 @@ typing
 websockets
 black
 statsmodels
+pandas
