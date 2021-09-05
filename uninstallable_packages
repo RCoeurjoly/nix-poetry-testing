@@ -19,3 +19,4 @@ tfx-bsl
 cryptography
 azure-storage-blob
 pytest
+futures
