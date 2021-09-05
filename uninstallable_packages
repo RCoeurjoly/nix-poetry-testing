@@ -8,3 +8,4 @@ scipy
 matplotlib
 pytest
 kiwisolver
+futures
