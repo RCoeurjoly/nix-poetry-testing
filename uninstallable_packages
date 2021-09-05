@@ -29,3 +29,4 @@ msrestazure
 pyodbc
 msal-extensions
 azure-identity
+snowflake-connector-python
