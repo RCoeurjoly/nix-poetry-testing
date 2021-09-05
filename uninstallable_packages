@@ -42,3 +42,4 @@ pydantic
 keyring
 pandas-gbq
 tensorflow-data-validation
+tensorflow-model-analysis
