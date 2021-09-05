@@ -95,3 +95,4 @@ azure-mgmt-batchai
 azure-kusto-ingest
 uwsgi
 azure-mgmt-iotcentral
+azure-mgmt-signalr
