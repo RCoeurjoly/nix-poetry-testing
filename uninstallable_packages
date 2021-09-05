@@ -85,3 +85,4 @@ azure-mgmt-trafficmanager
 pystan
 pytest-asyncio
 ml-pipelines-sdk
+ansible-core
