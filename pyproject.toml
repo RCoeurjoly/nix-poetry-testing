@@ -6,6 +6,7 @@ authors = ["Sébastien Eustace <sebastien@eustace.io>"]
 
 [tool.poetry.dependencies]
 python = ">=3.6,<4.0"
+regex = "^2021.8.28"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.4"
