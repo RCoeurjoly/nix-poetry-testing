@@ -33,7 +33,7 @@
           };
 
         devShell = pkgs.mkShell {
-          buildInputs = with pkgs; [ poetry ];
+          buildInputs = with pkgs; [ poetry jq ];
           inputsFrom = builtins.attrValues self.packages.${system};
         };
       });
