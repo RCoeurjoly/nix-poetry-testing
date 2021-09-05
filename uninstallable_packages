@@ -89,3 +89,4 @@ ansible-core
 tensorflow-cloud
 azure-keyvault-keys
 azure-storage-file
+azure-mgmt-msi
