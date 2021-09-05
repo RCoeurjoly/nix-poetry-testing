@@ -107,3 +107,4 @@ pytest-django
 atari-py
 azure
 html5-parser
+requests-ntlm
