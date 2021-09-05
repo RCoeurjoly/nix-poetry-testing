@@ -47,3 +47,4 @@ azure-storage-queue
 typing
 websockets
 black
+statsmodels
