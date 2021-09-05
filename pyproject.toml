@@ -6,6 +6,7 @@ authors = ["Sébastien Eustace <sebastien@eustace.io>"]
 
 [tool.poetry.dependencies]
 python = ">=3.6,<4.0"
+wcwidth = "^0.2.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.4"
