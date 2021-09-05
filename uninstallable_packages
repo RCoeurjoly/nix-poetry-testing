@@ -106,3 +106,4 @@ service-identity
 pytest-django
 atari-py
 azure
+html5-parser
