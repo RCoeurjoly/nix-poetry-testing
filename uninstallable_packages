@@ -11,3 +11,4 @@ kiwisolver
 futures
 ipython
 pyopenssl
+prompt-toolkit
