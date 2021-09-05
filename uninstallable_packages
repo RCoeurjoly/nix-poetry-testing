@@ -62,3 +62,4 @@ jira
 pygobject
 sekkaybot
 poetry
+snowflake-sqlalchemy
