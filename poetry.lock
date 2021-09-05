@@ -29,23 +29,6 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
-name = "importlib-metadata"
-version = "4.6.3"
-description = "Read metadata from Python packages"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-perf = ["ipython"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pep517", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
-
-[[package]]
 name = "more-itertools"
 version = "8.8.0"
 description = "More routines for operating on iterables, beyond itertools"
@@ -60,9 +43,6 @@ description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.dependencies]
-importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
 dev = ["pre-commit", "tox"]
@@ -101,29 +81,20 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
-name = "typing-extensions"
-version = "3.10.0.0"
-description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "dev"
+name = "webrtcvad-wheels"
+version = "2.0.10.post2"
+description = "Python interface to the Google WebRTC Voice Activity Detector (VAD) [released with binary wheels!]"
+category = "main"
 optional = false
 python-versions = "*"
 
-[[package]]
-name = "zipp"
-version = "3.5.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
 [package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
+dev = ["nose", "check-manifest", "unittest2", "zest.releaser", "psutil", "memory-profiler"]
 
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.6,<4.0"
-content-hash = "baa316f47ed96d789a82fdba9500ec558108a9f5e332cf1705c58057f76ce217"
+python-versions = ">=3.9,<3.10"
+content-hash = "ddcade0a04f78c9c8e2a62a88c5867fc04478e3ef7469a1085ca65c72f2339f3"
 
 [metadata.files]
 atomicwrites = [
@@ -137,10 +108,6 @@ attrs = [
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
-]
-importlib-metadata = [
-    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
-    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
@@ -162,12 +129,57 @@ six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
 ]
-typing-extensions = [
-    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
-    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
-    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
-]
-zipp = [
-    {file = "zipp-3.5.0-py3-none-any.whl", hash = "sha256:957cfda87797e389580cb8b9e3870841ca991e2125350677b2ca83a0e99390a3"},
-    {file = "zipp-3.5.0.tar.gz", hash = "sha256:f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"},
+webrtcvad-wheels = [
+    {file = "webrtcvad-wheels-2.0.10.post2.tar.gz", hash = "sha256:151bf3998fb731afff90dba77808326235370a6bb467a2d1b81345b10d1de10d"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27m-macosx_10_6_intel.whl", hash = "sha256:33b4f77268267ccb7b61bc57c1a584295bdef3285fe337a1928784b86c11d7ee"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:c5516131b15118a211f012f229b39411522e0171d7d4100e926756556f59e20c"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:e02385e8c1b805599428c74f54c062e0e2223963b08bc102f9097f281344f356"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:75ddc9f4fa00b2f3ffe6265ea7f4afb5576efe322457c7530930b3a609f165be"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27m-manylinux2010_i686.whl", hash = "sha256:dea591e62c2ab111bdf55b7c12249048f1c326e6af9382e19e2c294baa6e6a73"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27m-manylinux2010_x86_64.whl", hash = "sha256:0195527d1ff724a840281370fef6168bba419f42f0538a94158bd96ff2013e5a"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27m-win32.whl", hash = "sha256:b343c9b027103d5780d941c27ec60ab05a18c3fc04f39cc8e8492557f8613cf8"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27m-win_amd64.whl", hash = "sha256:0e48428e7ea6e7c687d03156b98e603982411df8c48e9c454e1d08bf579dd1cb"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:9c69c59583607df233e963ec157870d10c4624c76734b03d8a4930d2f828984a"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:611b72b95f6a9efa8940c5a15057d2c3fc17db8f518aa49c9d44727f8bfa431b"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27mu-manylinux2010_i686.whl", hash = "sha256:2a6a0cfbcbe13cd401d23a7ecb46f3a6556800dfeb6155cf3259a0b5c29729d8"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp27-cp27mu-manylinux2010_x86_64.whl", hash = "sha256:68758d48a99eeceeb01266dae1f64d92bff92090821049863e595fdcfec723d3"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:b6fece680591e01d9b23ff9868d8748dc40603a032e965102bb169dcd5d0341f"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp35-cp35m-macosx_10_9_x86_64.whl", hash = "sha256:6d67c4f335156396b520702359c939858326b22f75c4ad78f2ca944c7862f62a"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:7f6c2a47d85bb52d2bd481b51a633cdf343c89f038859fa341c92f6197d20c90"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:c030ee97bbf68d87015c910ea11a17c4d4afb1195852b360aba5f065c7337c81"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp35-cp35m-manylinux2010_i686.whl", hash = "sha256:1494a4348c26a757e2e14d2ee50ce33b92169a688abc0a1e231bdde85b93e781"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp35-cp35m-manylinux2010_x86_64.whl", hash = "sha256:320ad806aa7c0f3a9493fac915639ca4f2bf79bf9073faeda42274e518f1ee67"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp35-cp35m-win32.whl", hash = "sha256:42385b6fc9eaa10388dbc670d43b0d49bbf05994aa4a6e0fa3d91be4eb5a51de"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp35-cp35m-win_amd64.whl", hash = "sha256:6ccfee04d76d6cad0fa411d7a9946820b1c532abafb460aafecb03f4de2f3710"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp36-cp36m-macosx_10_6_intel.whl", hash = "sha256:0ed795190e6d06b0d2a3ab9aa9ccb988186fe035957c8f32bfcfb23653c3be66"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:a96ea50af9b8785deebd7f89d6e226be2bc50a1c7ecf7579a6908a649f857f98"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:c425b5672459301d919468827e22d92ceb9e76fa96604865ca824f426922e55c"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:9f6f72841e6c1e3135397956152d5c650e98d40169d81c955ed1c08cdee380ee"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp36-cp36m-manylinux2010_i686.whl", hash = "sha256:70932fd06c89e684472dd057196b32c737462a6948a756d087faa66a48f11a52"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:f37b534c603af86a123c2380509404ce79b8dc3f4173bfcb904e888ecae5d7ca"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp36-cp36m-win32.whl", hash = "sha256:041a21b0ca04f8d01a6ec3dfb27acd56ea693df3ed2376de52e9dcde06af2273"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp36-cp36m-win_amd64.whl", hash = "sha256:117794a0dc93df4688abf9c8c82e017f878939a2114d0e41e7e58133239bcc1d"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp37-cp37m-macosx_10_6_intel.whl", hash = "sha256:b66f862a16c27b547acc9fb0d125627e4596fd2fb61ac7085e50109cf34f2764"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:3667019215ed7ddffc45cd62de67204bd3d39369712f29c5e7bae66306832399"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:9c1ab5b7475234985f8d84bb310f30cf3df27e110f6638ff274c911108a2deb9"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:f3ab7aa499dcc0efafd2ebc99b9d214ebe25e2a1c879ef3fb8afa26f460ac520"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp37-cp37m-manylinux2010_i686.whl", hash = "sha256:d804092d5c975f0d5df41a7863d04cdfe561fd26eb6e4b26ea3689f1196e760a"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:d582d3ba46b4c979b18d7f7ece202eadb9dad65f78c3c666205486d060c2af6e"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp37-cp37m-win32.whl", hash = "sha256:b64b1632da3fe3c18e36d579f262aea745fa9ab46d98a33405b8609c6f87f401"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp37-cp37m-win_amd64.whl", hash = "sha256:759c1a2b1d91eadee43b4879f82d953c01fadc24e6d48a0f349c757d9c0d6950"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:f0ce172705d9f07f3809ea88ecc724fd39589ee2d1e90abf27151ecc604a9bb9"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp38-cp38-manylinux1_i686.whl", hash = "sha256:202417c6ac3ec190dc9f06dc2ae6151992508533b16e92d5f19385dbe74c53bb"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:23bb1462f8a7879a4bf7706672adbf36d20a3470e5f165d87c331cec2f2e268f"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp38-cp38-manylinux2010_i686.whl", hash = "sha256:59f76bc18d56c2d7aadc45792d388367e4eb5050f087b6a6c253e9ac617a08ea"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:1aea8bee49ef1cb39d5c441dcdd0a3d6bf12bcbe00e305a172bdad65a6ab3760"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp38-cp38-win32.whl", hash = "sha256:e2bf71d108f45ea5705ddea8ea7e8f3b8c9d458e0405e82024e9f5ade80c6de6"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp38-cp38-win_amd64.whl", hash = "sha256:1cd666e1f130094dd614179efebe9c60d16c26c725bc74c1ce0ba5227b98ee89"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:cc56f996e634d4851f64f82ffbaa85858b37969a84fdedf1872737fafc1497cd"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp39-cp39-win32.whl", hash = "sha256:053bc68a3168011f9a9bb6e6f690060f4e7363ff8f5760416b7b2c7988fd0f17"},
+    {file = "webrtcvad_wheels-2.0.10.post2-cp39-cp39-win_amd64.whl", hash = "sha256:4c340043635e44d5c8a9ccb064e85148473fa7ef7a61b8219cffd264c492d011"},
+    {file = "webrtcvad_wheels-2.0.10.post2-pp27-pypy_73-macosx_10_9_x86_64.whl", hash = "sha256:0c9ce07e4580ae466f2adf06ed1043fc62c55f8e45630357dbaed0bc154f7d7e"},
+    {file = "webrtcvad_wheels-2.0.10.post2-pp36-pypy36_pp73-macosx_10_9_x86_64.whl", hash = "sha256:e4c398904507a91e807aeee592ab7a0475730d991dfa033ed9842a04e8fb66a9"},
+    {file = "webrtcvad_wheels-2.0.10.post2-pp36-pypy36_pp73-win32.whl", hash = "sha256:4d3678a3500b40415e5ec653579b7f0f28649510863b7c5ba4efbb2c2992704f"},
+    {file = "webrtcvad_wheels-2.0.10.post2-pp37-pypy37_pp73-macosx_10_9_x86_64.whl", hash = "sha256:5dffa9b1ebbddd64a5ec181f099955ac7a40ecee6113caf9050ff9e45ad1bb60"},
+    {file = "webrtcvad_wheels-2.0.10.post2-pp37-pypy37_pp73-win32.whl", hash = "sha256:ceaa5b166011ffc63c9dbf4427ac94ab3d5d3a0d7c81e4d5abf9cb616f860c56"},
 ]
