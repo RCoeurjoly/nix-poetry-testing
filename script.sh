@@ -4,7 +4,7 @@ do
     echo git checkout -b $unquoted_package
     echo poetry add $unquoted_package
     echo git add --all
-    echo git commit -m "Install $unquoted_package with poetry"
+    echo git commit -m \"Install $unquoted_package with poetry\"
     echo git push
     echo git checkout main
 done
