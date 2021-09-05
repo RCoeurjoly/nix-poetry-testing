@@ -14,3 +14,4 @@ pyopenssl
 prompt-toolkit
 ipykernel
 traitlets
+paramiko
