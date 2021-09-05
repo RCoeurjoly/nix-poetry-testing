@@ -56,3 +56,4 @@ simple-salesforce
 azure-storage-file-datalake
 apache-airflow
 tensorflow-probability
+pycairo
