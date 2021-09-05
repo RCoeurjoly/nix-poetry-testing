@@ -81,3 +81,4 @@ dm-tree
 scrapy
 ml-metadata
 tfx
+azure-mgmt-trafficmanager
