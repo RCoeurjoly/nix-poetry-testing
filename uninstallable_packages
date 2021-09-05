@@ -87,3 +87,4 @@ pytest-asyncio
 ml-pipelines-sdk
 ansible-core
 tensorflow-cloud
+azure-keyvault-keys
