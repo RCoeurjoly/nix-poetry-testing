@@ -47,3 +47,4 @@ websockets
 black
 statsmodelsnumpy
 cryptography
+azure-storage-blob
