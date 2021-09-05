@@ -98,3 +98,4 @@ azure-mgmt-iotcentral
 azure-mgmt-signalr
 chex
 pytest-html
+azure-storage
