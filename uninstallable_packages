@@ -72,3 +72,4 @@ azure-kusto-data
 azure-mgmt-datalake-analytics
 pytest-rerunfailures
 azure-batch
+pycurl
