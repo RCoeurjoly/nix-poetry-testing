@@ -13,3 +13,4 @@ ipython
 pyopenssl
 prompt-toolkit
 ipykernel
+traitlets
