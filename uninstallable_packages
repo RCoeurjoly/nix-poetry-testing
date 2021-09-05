@@ -23,3 +23,4 @@ futures
 pyopenssl
 paramiko
 adal
+msal
