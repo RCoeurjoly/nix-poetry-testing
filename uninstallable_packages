@@ -36,3 +36,4 @@ azure-storage-common
 tfx-bsl
 tensorflow-transform
 keyring
+tensorflow-data-validation
