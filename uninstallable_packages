@@ -93,3 +93,4 @@ azure-mgmt-msi
 functools32
 azure-mgmt-batchai
 azure-kusto-ingest
+uwsgi
