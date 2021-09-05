@@ -9,43 +9,7 @@
     "rows": [
         {
             "download_count": 182348770,
-            "project": "botocore"
-        },
-        {
-            "download_count": 165866058,
-            "project": "urllib3"
-        },
-        {
-            "download_count": 146335124,
-            "project": "boto3"
-        },
-        {
-            "download_count": 140395200,
-            "project": "six"
-        },
-        {
-            "download_count": 136123528,
-            "project": "s3transfer"
-        },
-        {
-            "download_count": 123465658,
-            "project": "python-dateutil"
-        },
-        {
-            "download_count": 118712094,
-            "project": "requests"
-        },
-        {
-            "download_count": 109858358,
-            "project": "awscli"
-        },
-        {
-            "download_count": 107678027,
             "project": "certifi"
-        },
-        {
-            "download_count": 106569457,
-            "project": "idna"
         }
     ]
 }

@@ -1,4 +1,4 @@
-for quoted_package in $(cat packages.json | jq .rows[].project)
+for quoted_package in $(cat packages_small.json | jq .rows[].project)
 do
     unquoted_package=${quoted_package//\"}
     git rev-parse --quiet --verify $unquoted_package
