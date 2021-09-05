@@ -35,3 +35,4 @@ pytest-cov
 azure-storage-common
 tfx-bsl
 tensorflow-transform
+keyring
