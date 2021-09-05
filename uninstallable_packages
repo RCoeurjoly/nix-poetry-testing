@@ -43,3 +43,4 @@ typing
 azure-graphrbac
 ndg-httpsclient
 pysftp
+azure-keyvault
