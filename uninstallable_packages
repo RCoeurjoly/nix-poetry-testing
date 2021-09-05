@@ -42,3 +42,4 @@ azure-storage-queue
 typing
 azure-graphrbac
 ndg-httpsclient
+pysftp
