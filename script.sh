@@ -1,4 +1,4 @@
-check_branches () {
+check_uninstallable_packages () {
     for branch in $(git branch --no-color | grep -v "main")
     do
         git show --pretty="" --name-only $branch | grep -q uninstallable
