@@ -244,3 +244,4 @@ apache-airflow-providers-databricks
 django-compressor
 pyahocorasick
 fuzzy
+azure-eventhub-checkpointstoreblob-aio
