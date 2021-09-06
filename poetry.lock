@@ -29,23 +29,6 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
-name = "importlib-metadata"
-version = "4.6.3"
-description = "Read metadata from Python packages"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-perf = ["ipython"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pep517", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
-
-[[package]]
 name = "more-itertools"
 version = "8.8.0"
 description = "More routines for operating on iterables, beyond itertools"
@@ -60,9 +43,6 @@ description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.dependencies]
-importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
 dev = ["pre-commit", "tox"]
@@ -101,29 +81,17 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
-name = "typing-extensions"
-version = "3.10.0.0"
-description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "dev"
+name = "ssh-python"
+version = "0.9.0"
+description = "libssh C library bindings for Python."
+category = "main"
 optional = false
 python-versions = "*"
 
-[[package]]
-name = "zipp"
-version = "3.5.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
-
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.6,<4.0"
-content-hash = "baa316f47ed96d789a82fdba9500ec558108a9f5e332cf1705c58057f76ce217"
+python-versions = ">=3.9,<3.10"
+content-hash = "f3b0a822a3ed31053498e5bcf90220152f346b33645a728ee913a078a9d0bbd2"
 
 [metadata.files]
 atomicwrites = [
@@ -137,10 +105,6 @@ attrs = [
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
-]
-importlib-metadata = [
-    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
-    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
@@ -162,12 +126,19 @@ six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
 ]
-typing-extensions = [
-    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
-    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
-    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
-]
-zipp = [
-    {file = "zipp-3.5.0-py3-none-any.whl", hash = "sha256:957cfda87797e389580cb8b9e3870841ca991e2125350677b2ca83a0e99390a3"},
-    {file = "zipp-3.5.0.tar.gz", hash = "sha256:f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"},
+ssh-python = [
+    {file = "ssh-python-0.9.0.tar.gz", hash = "sha256:f38778d40820d068e7b80ebabfb52bd5ff9b480a3b4c350fb6ab59c11886a96a"},
+    {file = "ssh_python-0.9.0-cp27-cp27m-manylinux2010_x86_64.whl", hash = "sha256:d855ec61544512f00c382ba458c90f7b168a90d0d374a647698211da76599c44"},
+    {file = "ssh_python-0.9.0-cp27-cp27mu-manylinux2010_x86_64.whl", hash = "sha256:cc81fbfb34711938be3aa06bc41787034ff28f6a7156a2a8b8a2791517c776d2"},
+    {file = "ssh_python-0.9.0-cp35-cp35m-manylinux2010_x86_64.whl", hash = "sha256:37f507badb9041492bd543e4fef8f19e095f9788d94240d300fa436a82d012eb"},
+    {file = "ssh_python-0.9.0-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:78ea775590d6ca7bfc8c5ac0190c925898a274eed8c622a882376c0305870793"},
+    {file = "ssh_python-0.9.0-cp36-cp36m-win_amd64.whl", hash = "sha256:4d1a9c4ac2b9172aa3abf761886907804ca2a8d3d5d83789a11afe5fb2f26e9e"},
+    {file = "ssh_python-0.9.0-cp37-cp37m-macosx_10_14_x86_64.whl", hash = "sha256:7bbd433337b5fc75fbd9c170ef7cfcc66ea5e274745a0a01958d8dd39ea51388"},
+    {file = "ssh_python-0.9.0-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:3b856bd3633383956b4bcd8b5f6b8e35a0ba9ebff53a631b9b285576dee4d150"},
+    {file = "ssh_python-0.9.0-cp37-cp37m-win_amd64.whl", hash = "sha256:f9adedbe4077f19a3edf3ef3981138551068ec6407289e26385dfeafeb903a29"},
+    {file = "ssh_python-0.9.0-cp38-cp38-macosx_10_15_x86_64.whl", hash = "sha256:312f6aacf5227debc9ac695565f4712c3669719968a775427f7a4dd544fc9f75"},
+    {file = "ssh_python-0.9.0-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:2314835c1e644b56e827ccbe826b497a83364dcb1c9ea42bbd35eb54016c7c54"},
+    {file = "ssh_python-0.9.0-cp38-cp38-win_amd64.whl", hash = "sha256:876e9dff1fd062ca4e1ff7ebc61de234a2652503a11d2215d1e3c5047e21f5c1"},
+    {file = "ssh_python-0.9.0-cp39-cp39-manylinux2010_x86_64.whl", hash = "sha256:f77e264767da485c62e55edafda69341f460a4bee8098ef5b7179a205d783042"},
+    {file = "ssh_python-0.9.0-cp39-cp39-win_amd64.whl", hash = "sha256:140797a2849c8563c893a35b3a229939a2ed8d3cd7ac302ea4d2143ecb32a319"},
 ]
