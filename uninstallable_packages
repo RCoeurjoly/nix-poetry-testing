@@ -159,3 +159,4 @@ aliyun-python-sdk-core
 dbt-snowflake
 python3-saml
 readline
+cloudformation-cli
