@@ -164,3 +164,4 @@ cloudformation-cli-java-plugin
 fnbot2
 cloudformation-cli-python-plugin
 cloudformation-cli-go-plugin
+cloudformation-cli-typescript-plugin
