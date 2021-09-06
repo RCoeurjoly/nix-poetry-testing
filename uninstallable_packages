@@ -114,3 +114,4 @@ azureml-train-core
 sshpubkeys
 azureml-pipeline-core
 fbprophet
+azureml-train-restclients-hyperdrive
