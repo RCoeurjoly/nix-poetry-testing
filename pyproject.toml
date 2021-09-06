@@ -6,6 +6,7 @@ authors = ["Sébastien Eustace <sebastien@eustace.io>"]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.10"
+protobuf3-to-dict = "^0.1.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.4"
