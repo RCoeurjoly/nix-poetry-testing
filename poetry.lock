@@ -21,29 +21,24 @@ tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)"
 tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins"]
 
 [[package]]
+name = "cheetah3"
+version = "3.2.6.post2"
+description = "Cheetah is a template engine and code generation tool"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.extras]
+filters = ["markdown"]
+markdown = ["markdown"]
+
+[[package]]
 name = "colorama"
 version = "0.4.4"
 description = "Cross-platform colored terminal text."
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-
-[[package]]
-name = "importlib-metadata"
-version = "4.6.3"
-description = "Read metadata from Python packages"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-perf = ["ipython"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pep517", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
 
 [[package]]
 name = "more-itertools"
@@ -60,9 +55,6 @@ description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.dependencies]
-importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
 dev = ["pre-commit", "tox"]
@@ -100,30 +92,10 @@ category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
-[[package]]
-name = "typing-extensions"
-version = "3.10.0.0"
-description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "zipp"
-version = "3.5.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
-
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.6,<4.0"
-content-hash = "baa316f47ed96d789a82fdba9500ec558108a9f5e332cf1705c58057f76ce217"
+python-versions = ">=3.9,<3.10"
+content-hash = "1c4cd63e1d3bd078316f2ba43e75a77f1a52e0c2d96e8774b8c0b12d11cc63b0"
 
 [metadata.files]
 atomicwrites = [
@@ -134,13 +106,37 @@ attrs = [
     {file = "attrs-21.2.0-py2.py3-none-any.whl", hash = "sha256:149e90d6d8ac20db7a955ad60cf0e6881a3f20d37096140088356da6c716b0b1"},
     {file = "attrs-21.2.0.tar.gz", hash = "sha256:ef6aaac3ca6cd92904cdd0d83f629a15f18053ec84e6432106f7a4d04ae4f5fb"},
 ]
+cheetah3 = [
+    {file = "Cheetah3-3.2.6.post2-cp27-cp27m-macosx_10_13_x86_64.whl", hash = "sha256:47561f76c5fe0dca75e6f0771264f5284ce65482acfc0c29d9fe95bf6de0a469"},
+    {file = "Cheetah3-3.2.6.post2-cp27-cp27m-win32.whl", hash = "sha256:e38f54e3b7795caab8c448bc4659a889ec9fbbfd294d16860ba033d1ba47fd7e"},
+    {file = "Cheetah3-3.2.6.post2-cp27-cp27m-win_amd64.whl", hash = "sha256:dbb6b6898fbc417027f5d9528f760d5aa75f5a5ade9db69346b5053f40b13647"},
+    {file = "Cheetah3-3.2.6.post2-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:36b5c271cb686863f8b60eefde1be166bc3b32bf913d47d42d8d6f1ce66f8ebb"},
+    {file = "Cheetah3-3.2.6.post2-cp35-cp35m-macosx_10_6_x86_64.whl", hash = "sha256:41d6bc2b3270e1ac3866d207b5ff5d574ef08f933edfde174f7586a2ea756135"},
+    {file = "Cheetah3-3.2.6.post2-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:07ed019e9c26ac56dffcd841b37c479ae64ab0855639b87bb7509bdf9073eb8c"},
+    {file = "Cheetah3-3.2.6.post2-cp35-cp35m-win32.whl", hash = "sha256:49809e19c55dd430115de4cd4416554ced5d5087f0fe3fa294b0d77412097f7b"},
+    {file = "Cheetah3-3.2.6.post2-cp35-cp35m-win_amd64.whl", hash = "sha256:9474b3ca413ccbd36ec37bff5e484ae7ef2a3243ba92f194bdbca35b75be389d"},
+    {file = "Cheetah3-3.2.6.post2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:62fb67ad64dbe7ec45cf4256745fe4db18245ad335c157c6c788cc3ed24bc6a2"},
+    {file = "Cheetah3-3.2.6.post2-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:b37e99194c71eea8156c4cd66381257a3a4c45b13c5f7e9fdbcd2772ab0752e8"},
+    {file = "Cheetah3-3.2.6.post2-cp36-cp36m-win32.whl", hash = "sha256:f288222d79efbfdd787667239118120def2b8aaf17563cafef7355a23f2414ca"},
+    {file = "Cheetah3-3.2.6.post2-cp36-cp36m-win_amd64.whl", hash = "sha256:cea9767ea706406ffdd56fd1ba568660ea71940c037cd12e792f99f173c78af3"},
+    {file = "Cheetah3-3.2.6.post2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:333c71058794cc7349948c8c2a37d4337c83ba1b2abb2f5d39af1bc2282277ce"},
+    {file = "Cheetah3-3.2.6.post2-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:e70dca635e892805437466bfedbb94a9863e81664400a7b49014f8bbff2a78c9"},
+    {file = "Cheetah3-3.2.6.post2-cp37-cp37m-win32.whl", hash = "sha256:9c2d519ba7408c91aff6a94dff300679164fa998c5d4fef90a6b3bc7f7285f61"},
+    {file = "Cheetah3-3.2.6.post2-cp37-cp37m-win_amd64.whl", hash = "sha256:3bbcb2009d3ceb5a3e17f6563469712256e1a77bf782e96761ce47ff538daaec"},
+    {file = "Cheetah3-3.2.6.post2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:2f2cd651194752cf6a3b165da0884ed08fa38ab50f0fbaacd373febf14916a18"},
+    {file = "Cheetah3-3.2.6.post2-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:7fe156842964c5650a1a583fd958a2e6f2c99720b2b139ecfc69d1d3c1727578"},
+    {file = "Cheetah3-3.2.6.post2-cp38-cp38-win32.whl", hash = "sha256:f0ffcde9c1da6cfa486332ea0f6c073fc0856c2c7f03cf493c5b2dfaa2735cdc"},
+    {file = "Cheetah3-3.2.6.post2-cp38-cp38-win_amd64.whl", hash = "sha256:e60e35f69a42b4af3f68c9dac4151574747a3e32d1c95587b4f00b0f5ebd0a0e"},
+    {file = "Cheetah3-3.2.6.post2-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:6cfa1d794767d4d953ef6ad1e64151e3b5a35c09b51813cd71b7999ef0758fbe"},
+    {file = "Cheetah3-3.2.6.post2-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:ba66f0abfa68b87939255dd39e13265a6975f2b8a273b9c19afa5ee1aee2e0f8"},
+    {file = "Cheetah3-3.2.6.post2-cp39-cp39-win32.whl", hash = "sha256:ccd25734875dcc6b7bd62da741dffc88d454d2e80d0ca22911eb3ef45ed92d7f"},
+    {file = "Cheetah3-3.2.6.post2-cp39-cp39-win_amd64.whl", hash = "sha256:873b1e4f8855bee3fb772600dfc30a1864a2836f9030a4fa92b579e6626570ba"},
+    {file = "Cheetah3-3.2.6.post2-pp27-pypy_73-win32.whl", hash = "sha256:cceba598b2f7cda5f896ccde198b8f3e5277e585b580e7376f97c814f1128fa7"},
+    {file = "Cheetah3-3.2.6.post2.tar.gz", hash = "sha256:63157d7a00a273b59676b5be5aa817c75c37efc88478231f1a160f4cfb7f7878"},
+]
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
-]
-importlib-metadata = [
-    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
-    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
@@ -161,13 +157,4 @@ pytest = [
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
-]
-typing-extensions = [
-    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
-    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
-    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
-]
-zipp = [
-    {file = "zipp-3.5.0-py3-none-any.whl", hash = "sha256:957cfda87797e389580cb8b9e3870841ca991e2125350677b2ca83a0e99390a3"},
-    {file = "zipp-3.5.0.tar.gz", hash = "sha256:f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"},
 ]
