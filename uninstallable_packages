@@ -233,3 +233,4 @@ dpcpp-cpp-rt
 intel-cmplr-lib-rt
 pyldap
 gsecrets
+thriftpy2
