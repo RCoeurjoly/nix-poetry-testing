@@ -29,23 +29,6 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
-name = "importlib-metadata"
-version = "4.6.3"
-description = "Read metadata from Python packages"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-perf = ["ipython"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pep517", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
-
-[[package]]
 name = "more-itertools"
 version = "8.8.0"
 description = "More routines for operating on iterables, beyond itertools"
@@ -60,9 +43,6 @@ description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.dependencies]
-importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
 dev = ["pre-commit", "tox"]
@@ -93,6 +73,46 @@ py = ">=1.5.0"
 six = ">=1.10.0"
 
 [[package]]
+name = "robotframework"
+version = "4.1"
+description = "Generic automation framework for acceptance testing and robotic process automation (RPA)"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "robotframework-pythonlibcore"
+version = "3.0.0"
+description = "Tools to ease creating larger test libraries for Robot Framework using Python."
+category = "main"
+optional = false
+python-versions = ">=3.6, <4"
+
+[[package]]
+name = "robotframework-seleniumlibrary"
+version = "5.1.3"
+description = "Web testing library for Robot Framework"
+category = "main"
+optional = false
+python-versions = ">=3.6, <4"
+
+[package.dependencies]
+robotframework = ">=3.1.2"
+robotframework-pythonlibcore = ">=2.1.0"
+selenium = ">=3.141.0"
+
+[[package]]
+name = "selenium"
+version = "3.141.0"
+description = "Python bindings for Selenium"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+urllib3 = "*"
+
+[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -101,29 +121,22 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
-name = "typing-extensions"
-version = "3.10.0.0"
-description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "dev"
+name = "urllib3"
+version = "1.26.6"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
 optional = false
-python-versions = "*"
-
-[[package]]
-name = "zipp"
-version = "3.5.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
 
 [package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
+brotli = ["brotlipy (>=0.6.0)"]
+secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "ipaddress"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.6,<4.0"
-content-hash = "baa316f47ed96d789a82fdba9500ec558108a9f5e332cf1705c58057f76ce217"
+python-versions = ">=3.9,<3.10"
+content-hash = "ff881b9c86fc61885173615fedfa47d8bcab1ed2e3e68bcaefa90d1190656a7b"
 
 [metadata.files]
 atomicwrites = [
@@ -137,10 +150,6 @@ attrs = [
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
-]
-importlib-metadata = [
-    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
-    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
@@ -158,16 +167,27 @@ pytest = [
     {file = "pytest-3.10.1-py2.py3-none-any.whl", hash = "sha256:3f193df1cfe1d1609d4c583838bea3d532b18d6160fd3f55c9447fdca30848ec"},
     {file = "pytest-3.10.1.tar.gz", hash = "sha256:e246cf173c01169b9617fc07264b7b1316e78d7a650055235d6d897bc80d9660"},
 ]
+robotframework = [
+    {file = "robotframework-4.1-py2.py3-none-any.whl", hash = "sha256:dd57b66ee4f059cfb72596b19016e37f40c0fd3f1e45f53726ae7ed07e05e4a3"},
+    {file = "robotframework-4.1.zip", hash = "sha256:567f2a21f0906635e21d45fe3cb84a4809a12980c9f2706a8a5f65f40f6b4ccd"},
+]
+robotframework-pythonlibcore = [
+    {file = "robotframework-pythonlibcore-3.0.0.tar.gz", hash = "sha256:1bce3b8dfcb7519789ee3a89320f6402e126f6d0a02794184a1ab8cee0e46b5d"},
+    {file = "robotframework_pythonlibcore-3.0.0-py2.py3-none-any.whl", hash = "sha256:af10c2403cd38834988c4ce68ffb6ec6f9b14bd2cd39ecf836d443377c59b7c4"},
+]
+robotframework-seleniumlibrary = [
+    {file = "robotframework-seleniumlibrary-5.1.3.tar.gz", hash = "sha256:f51a0068c6c0d8107ee1120874a3afbf2bbe751fd0782cb86a27a616d9ca30b6"},
+    {file = "robotframework_seleniumlibrary-5.1.3-py2.py3-none-any.whl", hash = "sha256:7c8211b870249db53dbb2091a5a36c09aa657f06405d112587d37d33fff7454e"},
+]
+selenium = [
+    {file = "selenium-3.141.0-py2.py3-none-any.whl", hash = "sha256:2d7131d7bc5a5b99a2d9b04aaf2612c411b03b8ca1b1ee8d3de5845a9be2cb3c"},
+    {file = "selenium-3.141.0.tar.gz", hash = "sha256:deaf32b60ad91a4611b98d8002757f29e6f2c2d5fcaf202e1c9ad06d6772300d"},
+]
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
 ]
-typing-extensions = [
-    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
-    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
-    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
-]
-zipp = [
-    {file = "zipp-3.5.0-py3-none-any.whl", hash = "sha256:957cfda87797e389580cb8b9e3870841ca991e2125350677b2ca83a0e99390a3"},
-    {file = "zipp-3.5.0.tar.gz", hash = "sha256:f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"},
+urllib3 = [
+    {file = "urllib3-1.26.6-py2.py3-none-any.whl", hash = "sha256:39fb8672126159acb139a7718dd10806104dec1e2f0f6c88aab05d17df10c8d4"},
+    {file = "urllib3-1.26.6.tar.gz", hash = "sha256:f57b4c16c62fa2760b7e3d97c35b255512fb6b59a259730f36ba32ce9f8e342f"},
 ]
