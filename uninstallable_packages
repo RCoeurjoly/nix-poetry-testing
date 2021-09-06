@@ -176,3 +176,4 @@ azure-mgmt-sqlvirtualmachine
 apache-airflow-backport-providers-amazon
 spark-sklearn
 social-auth-app-django
+airflow-code-editor
