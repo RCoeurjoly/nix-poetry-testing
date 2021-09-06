@@ -165,3 +165,4 @@ fnbot2
 cloudformation-cli-python-plugin
 cloudformation-cli-go-plugin
 cloudformation-cli-typescript-plugin
+social-auth-core
