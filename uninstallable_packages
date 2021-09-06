@@ -186,3 +186,4 @@ fasttext
 ecos
 azure-eventhubs-client
 cvxpy
+airflow-prometheus-exporter
