@@ -185,3 +185,4 @@ allure-pytest
 fasttext
 ecos
 azure-eventhubs-client
+cvxpy
