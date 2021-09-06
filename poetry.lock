@@ -29,21 +29,16 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
-name = "importlib-metadata"
-version = "4.6.3"
-description = "Read metadata from Python packages"
-category = "dev"
+name = "mecab-python3"
+version = "1.0.4"
+description = "Python wrapper for the MeCab morphological analyzer for Japanese"
+category = "main"
 optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
-zipp = ">=0.5"
+python-versions = "*"
 
 [package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-perf = ["ipython"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pep517", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
+unidic = ["unidic"]
+unidic-lite = ["unidic-lite"]
 
 [[package]]
 name = "more-itertools"
@@ -60,9 +55,6 @@ description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.dependencies]
-importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
 dev = ["pre-commit", "tox"]
@@ -100,30 +92,10 @@ category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
-[[package]]
-name = "typing-extensions"
-version = "3.10.0.0"
-description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "zipp"
-version = "3.5.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
-
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.6,<4.0"
-content-hash = "baa316f47ed96d789a82fdba9500ec558108a9f5e332cf1705c58057f76ce217"
+python-versions = ">=3.9,<3.10"
+content-hash = "0d2b19fa851360df166d49660cbd7a7a23a3445a6d5aa9e4c875f71b5efca452"
 
 [metadata.files]
 atomicwrites = [
@@ -138,9 +110,24 @@ colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
-importlib-metadata = [
-    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
-    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
+mecab-python3 = [
+    {file = "mecab-python3-1.0.4.tar.gz", hash = "sha256:b150ad5fe4260539b4ef184657e552ef81307fbbe60ae1f258bc814549ea90f8"},
+    {file = "mecab_python3-1.0.4-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:3c7e87c65160e5e4edb08cb80dbce50f4e711c53f45063321aab72ab2566ffe4"},
+    {file = "mecab_python3-1.0.4-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b2fbed960ef82f4192b31efd88af1f3c24cd1692b62720ed70d7e314a50f581e"},
+    {file = "mecab_python3-1.0.4-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:cb6eb6cc47e3937a2edfaa9595dc2d165ed9f025e3a53bd0a5033a12fa6bcdcf"},
+    {file = "mecab_python3-1.0.4-cp36-cp36m-win_amd64.whl", hash = "sha256:b149b51f0f62c9512d219c9e79c6db2eb66e70863a97eb412d8fc3ba7a25f351"},
+    {file = "mecab_python3-1.0.4-cp37-cp37m-macosx_10_14_x86_64.whl", hash = "sha256:c1606b35df0136b3e9dc7add2e69d2c1151e69fd5675c0cde62d0b017b2319e7"},
+    {file = "mecab_python3-1.0.4-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:53b0b899ef03f364bfd7fa28f260ee1e893e4f47ff90a141a522709b892f0a4e"},
+    {file = "mecab_python3-1.0.4-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:52a789c708f8b89044236201eb03c7fe5517fad5210a9de2230c7d99a2a8c760"},
+    {file = "mecab_python3-1.0.4-cp37-cp37m-win_amd64.whl", hash = "sha256:d6ca73c0dec72038290faa6de17d57d771535eb47c22346e170dffcb82d696bb"},
+    {file = "mecab_python3-1.0.4-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:18e14dfe3d8c66cfa1c9f49e3bc8ac480b79a433ec9e5b5d2c1fb73f36ec7c3e"},
+    {file = "mecab_python3-1.0.4-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:221256b84be0ee29dc8fa450210236b40707b9d63cfc70de5102d2531622d062"},
+    {file = "mecab_python3-1.0.4-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:de39b82f44d97fc0fd636644ad14c9662f51afcd73775379d5a8b1eb20ee85a6"},
+    {file = "mecab_python3-1.0.4-cp38-cp38-win_amd64.whl", hash = "sha256:96d9e8c098401fb4b5bd32258f4952f3b22cdb30ab291f5ff82eae1d0941cbed"},
+    {file = "mecab_python3-1.0.4-cp39-cp39-macosx_10_14_x86_64.whl", hash = "sha256:dcd62ebf2eecde1263119b92ff5379a046bb8231cb999fafda00f0925dfcb67e"},
+    {file = "mecab_python3-1.0.4-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:178b632b717e3249054a7ad4c0fbc60ce8493d357afa7673d535ffa11e45eaba"},
+    {file = "mecab_python3-1.0.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:fbfad60261ad3b9390b8615528fc013302a3e8febba220f799216c1a1154ee7e"},
+    {file = "mecab_python3-1.0.4-cp39-cp39-win_amd64.whl", hash = "sha256:445b4f5ee5674d85f6de2726ec28991801844ff71eb096129da5f5ba077d5a87"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
@@ -161,13 +148,4 @@ pytest = [
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
-]
-typing-extensions = [
-    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
-    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
-    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
-]
-zipp = [
-    {file = "zipp-3.5.0-py3-none-any.whl", hash = "sha256:957cfda87797e389580cb8b9e3870841ca991e2125350677b2ca83a0e99390a3"},
-    {file = "zipp-3.5.0.tar.gz", hash = "sha256:f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"},
 ]
