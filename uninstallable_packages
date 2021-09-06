@@ -248,3 +248,4 @@ azure-eventhub-checkpointstoreblob-aio
 pytest-check
 asyncssh
 pytest-factoryboy
+rcssmin
