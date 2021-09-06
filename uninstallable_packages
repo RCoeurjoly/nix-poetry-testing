@@ -229,3 +229,4 @@ auth0-python
 lru-dict
 certbot
 requests-kerberos
+dpcpp-cpp-rt
