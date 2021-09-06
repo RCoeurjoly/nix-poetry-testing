@@ -246,3 +246,4 @@ pyahocorasick
 fuzzy
 azure-eventhub-checkpointstoreblob-aio
 pytest-check
+asyncssh
