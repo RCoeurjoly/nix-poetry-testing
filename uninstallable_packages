@@ -250,3 +250,4 @@ asyncssh
 pytest-factoryboy
 rcssmin
 udatetime
+channels-redis
