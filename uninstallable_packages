@@ -283,3 +283,4 @@ pytest-subtests
 credstash
 azureml-cli-common
 optbinning
+sops
