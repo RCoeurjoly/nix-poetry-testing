@@ -272,3 +272,4 @@ django-auth-ldap
 ibm-db-sa
 tslearn
 gdal
+pgpy
