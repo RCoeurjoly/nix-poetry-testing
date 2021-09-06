@@ -6,6 +6,7 @@ authors = ["Sébastien Eustace <sebastien@eustace.io>"]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.10"
+grpcio-gcp = "^0.2.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.4"
