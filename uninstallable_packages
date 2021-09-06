@@ -131,3 +131,4 @@ azureml-automl-core
 pypiwin32
 azure-mgmt-powerbiembedded
 azure-mgmt-machinelearningcompute
+azureml-pipeline
