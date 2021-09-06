@@ -142,3 +142,4 @@ yappi
 python-ldap
 python-crfsuite
 jwcrypto
+xmlsec
