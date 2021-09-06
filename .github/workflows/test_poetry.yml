@@ -1,4 +1,4 @@
-name: "Test"
+name: "Test poetry"
 on:
   pull_request:
   push:
@@ -15,3 +15,4 @@ jobs:
           experimental-features = nix-command flakes
           access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
     - run: nix develop
+    - run: poetry add ${{ github.head_ref }}
