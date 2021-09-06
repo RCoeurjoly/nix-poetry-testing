@@ -265,3 +265,4 @@ shareplum
 pytest-bdd
 pytest-flask
 pytd
+azure-eventhub-checkpointstoreblob
