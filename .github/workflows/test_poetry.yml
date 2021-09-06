@@ -17,6 +17,5 @@ jobs:
     - name: Get branch name
       uses: nelonoel/branch-name@v1.0.1
     - run: |
-        nix build
         nix develop
         poetry add ${BRANCH_NAME}
