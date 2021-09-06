@@ -126,3 +126,4 @@ azure-mgmt
 azure-mgmt-scheduler
 focal-loss
 azureml-train-automl-client
+azureml-pipeline-steps
