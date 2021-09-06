@@ -29,21 +29,12 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
-name = "importlib-metadata"
-version = "4.6.3"
-description = "Read metadata from Python packages"
-category = "dev"
+name = "hdbcli"
+version = "2.9.28"
+description = "SAP HANA Python Client"
+category = "main"
 optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-perf = ["ipython"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pep517", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
+python-versions = "*"
 
 [[package]]
 name = "more-itertools"
@@ -60,9 +51,6 @@ description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.dependencies]
-importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
 dev = ["pre-commit", "tox"]
@@ -100,30 +88,10 @@ category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
-[[package]]
-name = "typing-extensions"
-version = "3.10.0.0"
-description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "zipp"
-version = "3.5.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
-
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.6,<4.0"
-content-hash = "baa316f47ed96d789a82fdba9500ec558108a9f5e332cf1705c58057f76ce217"
+python-versions = ">=3.9,<3.10"
+content-hash = "be825da7cd910cc87a2f23bb0bb73dd313b6ca498a30c18b07dfb01542279af3"
 
 [metadata.files]
 atomicwrites = [
@@ -138,9 +106,27 @@ colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
-importlib-metadata = [
-    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
-    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
+hdbcli = [
+    {file = "hdbcli-2.9.28-cp27-cp27m-macosx_10_7_x86_64.whl", hash = "sha256:e186e48b29fcb0087742d1cc35b301c628784f990de0348d44fb8f1a63e5ac2d"},
+    {file = "hdbcli-2.9.28-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:d655bfd31686fce62698966734b61b0ff20d3119bde9b1c815caa42d66d07cf6"},
+    {file = "hdbcli-2.9.28-cp27-cp27m-manylinux2014_ppc64le.whl", hash = "sha256:34a32c60db9b5ff3039c55703a7bb3bfbece6e802ca6c52bac064467a2fee3b9"},
+    {file = "hdbcli-2.9.28-cp27-cp27m-win_amd64.whl", hash = "sha256:1ee957c62c0c9592c89f749601a715f417cb28ec99e34d0961667a3da57363f4"},
+    {file = "hdbcli-2.9.28-cp27-cp27mu-macosx_10_7_x86_64.whl", hash = "sha256:52d1bfc034c1d214be6d247ad8800a0cf1980040ce09a3045645f1bfb09b130a"},
+    {file = "hdbcli-2.9.28-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:9fd7b655f6e0912288f4285f149c96a08930590f23337c5042a7a8fbcf67d750"},
+    {file = "hdbcli-2.9.28-cp27-cp27mu-manylinux2014_ppc64le.whl", hash = "sha256:05e7f40d461588c51384b586503f10f3396a2c0de35f841654790f70c0ec3578"},
+    {file = "hdbcli-2.9.28-cp34-abi3-macosx_10_7_x86_64.whl", hash = "sha256:e4c82dd844791b505863849a10859e559bfc4ff9f8527d563797cffc6191f328"},
+    {file = "hdbcli-2.9.28-cp34-abi3-manylinux1_x86_64.whl", hash = "sha256:9682c83483e440270763019871ec1c4591aa8580576a2751226ee49017bfc218"},
+    {file = "hdbcli-2.9.28-cp34-abi3-manylinux2014_ppc64le.whl", hash = "sha256:acc7f06a3c4266db11b25b7164b152301ade422505fd5b194a5993392ebfae31"},
+    {file = "hdbcli-2.9.28-cp34-cp34m-win_amd64.whl", hash = "sha256:149ef23f04af5010efadaa61a1e0985d0b01512be6ba34e01dc6b5ba1a212d2f"},
+    {file = "hdbcli-2.9.28-cp35-cp35m-win_amd64.whl", hash = "sha256:58b6acf62c831d7913ce86ce4e127fa2798fcb1ec512b16c0d1778c3f1761551"},
+    {file = "hdbcli-2.9.28-cp36-cp36m-win_amd64.whl", hash = "sha256:732ae9d64ef4871263fd4230856113baca5bde61108207c500b613204463a2d2"},
+    {file = "hdbcli-2.9.28-cp37-cp37m-win_amd64.whl", hash = "sha256:ee0d790cf230cfa24edc8371d7b1aee1e7a3e2eab6c0a7572f2718eff6e2ec66"},
+    {file = "hdbcli-2.9.28-cp38-cp38-win32.whl", hash = "sha256:3dfffc432ee10c5ba5d04a598fce9d6689f49334a2077debf00ab7ce8b600257"},
+    {file = "hdbcli-2.9.28-cp38-cp38-win_amd64.whl", hash = "sha256:733fabac61609db81ef7f57c8cd3021886fdc274cd689458e940f7ea14831ab6"},
+    {file = "hdbcli-2.9.28-cp38-cp38m-win32.whl", hash = "sha256:039048a89b484e9b6d53c9d11e2f26a62b5977af9939a41b8914fdfdf8079f81"},
+    {file = "hdbcli-2.9.28-cp38-cp38m-win_amd64.whl", hash = "sha256:7a66e701becc137f0f276f33263c3944eb5661a54982f5eaf6a1b03bde865cfe"},
+    {file = "hdbcli-2.9.28-cp39-cp39-win32.whl", hash = "sha256:f32d1171650b7d0718870da0d5f3fc3a80dad3860452d3a501356bc630b174b3"},
+    {file = "hdbcli-2.9.28-cp39-cp39-win_amd64.whl", hash = "sha256:041c7fedd7b6d0cc280afbeabb08c0702d0c202e0cf4a73a7d6636efa4fc2cb5"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
@@ -161,13 +147,4 @@ pytest = [
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
-]
-typing-extensions = [
-    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
-    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
-    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
-]
-zipp = [
-    {file = "zipp-3.5.0-py3-none-any.whl", hash = "sha256:957cfda87797e389580cb8b9e3870841ca991e2125350677b2ca83a0e99390a3"},
-    {file = "zipp-3.5.0.tar.gz", hash = "sha256:f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"},
 ]
