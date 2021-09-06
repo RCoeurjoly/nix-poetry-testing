@@ -203,3 +203,4 @@ azureml-contrib-services
 google-oauth
 openstacksdk
 acme
+gcs-oauth2-boto-plugin
