@@ -267,3 +267,4 @@ pytest-flask
 pytd
 azure-eventhub-checkpointstoreblob
 locustio
+pyspnego
