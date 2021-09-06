@@ -6,6 +6,7 @@ authors = ["Sébastien Eustace <sebastien@eustace.io>"]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.10"
+tensorflow-cpu = "^2.6.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.4"
