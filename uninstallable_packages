@@ -162,3 +162,4 @@ readline
 cloudformation-cli
 cloudformation-cli-java-plugin
 fnbot2
+cloudformation-cli-python-plugin
