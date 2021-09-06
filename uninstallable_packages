@@ -157,3 +157,4 @@ pdfminer-six
 ezfnsetup
 aliyun-python-sdk-core
 dbt-snowflake
+python3-saml
