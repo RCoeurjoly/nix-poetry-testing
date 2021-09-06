@@ -212,3 +212,4 @@ python-geohash
 daphne
 pypcap
 pykerberos
+mysql-python
