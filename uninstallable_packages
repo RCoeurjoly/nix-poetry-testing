@@ -195,3 +195,4 @@ salesforce-bulk
 azure-storage-file-share
 channels
 prophet
+apache-airflow-providers-snowflake
