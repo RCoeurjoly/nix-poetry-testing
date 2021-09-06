@@ -209,3 +209,4 @@ pycocotools
 pysaml2
 azureml-designer-serving
 python-geohash
+daphne
