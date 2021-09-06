@@ -197,3 +197,4 @@ channels
 prophet
 apache-airflow-providers-snowflake
 wincertstore
+kaleido
