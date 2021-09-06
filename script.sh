@@ -71,3 +71,12 @@ add_package_to_uninstallable_list() {
     git add uninstallable_packages
     git commit -m \""Uninstallable $uninstallable_package"\"
 }
+
+uninstall_poetry_packages() {
+    for branch in $(git branch --no-color | grep -v "main")
+    do
+        git checkout $branch
+        poetry remove $branch
+        git checkout -- .
+    done
+}
