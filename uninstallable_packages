@@ -238,3 +238,4 @@ spotify-tensorflow
 molecule
 azureml-defaults
 lightfm
+tree-sitter
