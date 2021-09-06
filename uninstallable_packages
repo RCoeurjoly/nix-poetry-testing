@@ -115,3 +115,4 @@ sshpubkeys
 azureml-pipeline-core
 fbprophet
 azureml-train-restclients-hyperdrive
+sshtunnel
