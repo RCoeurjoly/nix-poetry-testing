@@ -213,3 +213,4 @@ daphne
 pypcap
 pykerberos
 mysql-python
+django-oauth-toolkit
