@@ -189,3 +189,4 @@ cvxpy
 airflow-prometheus-exporter
 python-dev-tools
 scs
+crypto
