@@ -231,3 +231,4 @@ certbot
 requests-kerberos
 dpcpp-cpp-rt
 intel-cmplr-lib-rt
+pyldap
