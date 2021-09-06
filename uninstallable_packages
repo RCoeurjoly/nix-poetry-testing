@@ -144,3 +144,4 @@ python-crfsuite
 jwcrypto
 xmlsec
 textblob
+nested-lookup
