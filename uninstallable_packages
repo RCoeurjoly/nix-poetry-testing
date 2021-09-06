@@ -187,3 +187,4 @@ ecos
 azure-eventhubs-client
 cvxpy
 airflow-prometheus-exporter
+python-dev-tools
