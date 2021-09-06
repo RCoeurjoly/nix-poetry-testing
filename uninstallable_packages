@@ -216,3 +216,4 @@ mysql-python
 django-oauth-toolkit
 cnvrg
 jenkspy
+pytest-custom-exit-code
