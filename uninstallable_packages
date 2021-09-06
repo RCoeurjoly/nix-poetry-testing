@@ -293,3 +293,4 @@ apache-airflow-providers-amazon
 gsutil
 undetected-chromedriver
 pyminizip
+eth-account
