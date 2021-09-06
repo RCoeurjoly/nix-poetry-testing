@@ -168,3 +168,4 @@ cloudformation-cli-typescript-plugin
 social-auth-core
 naked
 dbt
+django-allauth
