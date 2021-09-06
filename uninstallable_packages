@@ -241,3 +241,4 @@ lightfm
 tree-sitter
 web3
 apache-airflow-providers-databricks
+django-compressor
