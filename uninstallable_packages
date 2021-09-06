@@ -259,3 +259,4 @@ dartsclone
 aliyun-python-sdk-kms
 rpy2
 kedro
+python-openstackclient
