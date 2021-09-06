@@ -135,3 +135,4 @@ azureml-pipeline
 azureml-sdk
 azure-mgmt-devspaces
 azureml-train
+atlassian-jwt-auth
