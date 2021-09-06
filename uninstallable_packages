@@ -137,3 +137,4 @@ azure-mgmt-devspaces
 azureml-train
 atlassian-jwt-auth
 databricks-connect
+annoy
