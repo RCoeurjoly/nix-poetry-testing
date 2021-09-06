@@ -143,3 +143,4 @@ python-ldap
 python-crfsuite
 jwcrypto
 xmlsec
+textblob
