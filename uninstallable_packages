@@ -261,3 +261,4 @@ rpy2
 kedro
 python-openstackclient
 apache-airflow-backport-providers-ssh
+shareplum
