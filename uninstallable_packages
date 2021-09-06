@@ -199,3 +199,4 @@ apache-airflow-providers-snowflake
 wincertstore
 kaleido
 josepy
+azureml-contrib-services
