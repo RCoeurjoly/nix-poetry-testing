@@ -279,3 +279,4 @@ github3-py
 recordclass
 exchangelib
 pywatchman
+pytest-subtests
