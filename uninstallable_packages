@@ -226,3 +226,4 @@ tecton
 osc-lib
 hk80
 auth0-python
+lru-dict
