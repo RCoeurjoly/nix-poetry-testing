@@ -269,3 +269,4 @@ azure-eventhub-checkpointstoreblob
 locustio
 pyspnego
 django-auth-ldap
+ibm-db-sa
