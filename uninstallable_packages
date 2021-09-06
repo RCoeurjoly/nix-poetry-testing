@@ -160,3 +160,4 @@ dbt-snowflake
 python3-saml
 readline
 cloudformation-cli
+cloudformation-cli-java-plugin
