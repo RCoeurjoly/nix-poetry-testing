@@ -123,3 +123,4 @@ struct2tensor
 fabric
 azureml-dataset-runtime
 azure-mgmt
+azure-mgmt-scheduler
