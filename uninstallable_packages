@@ -170,3 +170,4 @@ naked
 dbt
 django-allauth
 ansible-base
+azure-multiapi-storage
