@@ -171,3 +171,4 @@ dbt
 django-allauth
 ansible-base
 azure-multiapi-storage
+azure-mgmt-imagebuilder
