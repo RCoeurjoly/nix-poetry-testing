@@ -151,3 +151,4 @@ usaddress
 aws-encryption-sdk
 autobahn
 apache-airflow-backport-providers-snowflake
+selenium-wire
