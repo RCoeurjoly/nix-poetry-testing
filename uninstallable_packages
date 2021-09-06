@@ -110,3 +110,4 @@ html5-parser
 requests-ntlm
 txaws
 dopamine-rl
+azureml-train-core
