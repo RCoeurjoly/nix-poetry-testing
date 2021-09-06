@@ -240,3 +240,4 @@ azureml-defaults
 lightfm
 tree-sitter
 web3
+apache-airflow-providers-databricks
