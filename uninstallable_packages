@@ -117,3 +117,4 @@ fbprophet
 azureml-train-restclients-hyperdrive
 sshtunnel
 dm-sonnet
+tensorflow-gan
