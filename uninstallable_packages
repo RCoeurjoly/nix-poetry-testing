@@ -133,3 +133,4 @@ azure-mgmt-powerbiembedded
 azure-mgmt-machinelearningcompute
 azureml-pipeline
 azureml-sdk
+azure-mgmt-devspaces
