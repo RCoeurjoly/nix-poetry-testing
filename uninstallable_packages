@@ -181,3 +181,4 @@ pywinrm
 boostedblob
 beautifulsoup
 hdbscan
+allure-pytest
