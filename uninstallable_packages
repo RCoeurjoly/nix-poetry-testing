@@ -280,3 +280,4 @@ recordclass
 exchangelib
 pywatchman
 pytest-subtests
+credstash
