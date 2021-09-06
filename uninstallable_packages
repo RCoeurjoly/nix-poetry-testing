@@ -291,3 +291,4 @@ smbprotocol
 ibm-db
 apache-airflow-providers-amazon
 gsutil
+undetected-chromedriver
