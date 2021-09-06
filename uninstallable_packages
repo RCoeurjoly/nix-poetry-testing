@@ -219,3 +219,4 @@ jenkspy
 pytest-custom-exit-code
 pyhs2
 office365-rest-python-client
+tensorflowonspark
