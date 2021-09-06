@@ -29,21 +29,24 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
-name = "importlib-metadata"
-version = "4.6.3"
-description = "Read metadata from Python packages"
-category = "dev"
+name = "intel-openmp"
+version = "2021.3.0"
+description = "Intel® OpenMP* Runtime Library"
+category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = "*"
+
+[[package]]
+name = "mkl"
+version = "2021.3.0"
+description = "Intel® oneAPI Math Kernel Library"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
-typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-perf = ["ipython"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pep517", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
+intel-openmp = ">=2021.0.0,<2022.0.0"
+tbb = ">=2021.0.0,<2022.0.0"
 
 [[package]]
 name = "more-itertools"
@@ -60,9 +63,6 @@ description = "plugin and hook calling mechanisms for python"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.dependencies]
-importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
 dev = ["pre-commit", "tox"]
@@ -101,29 +101,17 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
-name = "typing-extensions"
-version = "3.10.0.0"
-description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "dev"
+name = "tbb"
+version = "2021.3.0"
+description = "Intel® oneAPI Threading Building Blocks"
+category = "main"
 optional = false
 python-versions = "*"
 
-[[package]]
-name = "zipp"
-version = "3.5.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
-
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.6,<4.0"
-content-hash = "baa316f47ed96d789a82fdba9500ec558108a9f5e332cf1705c58057f76ce217"
+python-versions = ">=3.9,<3.10"
+content-hash = "50e9219a9247c0ffa239ff438bf644ccfd61ea9d3d93504b5946e6e0eff79644"
 
 [metadata.files]
 atomicwrites = [
@@ -138,9 +126,19 @@ colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
-importlib-metadata = [
-    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
-    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
+intel-openmp = [
+    {file = "intel_openmp-2021.3.0-py2.py3-none-macosx_10_15_x86_64.macosx_11_0_x86_64.whl", hash = "sha256:5ca8b2ab54803a6bf65e1140a2207a4904e85f6915d39ee88898264f579f6266"},
+    {file = "intel_openmp-2021.3.0-py2.py3-none-manylinux1_i686.whl", hash = "sha256:5cfcedd98991acbebabf5544c9790544a17102b0dc03b9db341e4426cb6c979d"},
+    {file = "intel_openmp-2021.3.0-py2.py3-none-manylinux1_x86_64.whl", hash = "sha256:54e2db4de099075f981ecc0d21938e546edc9b84c03dd5ffa6001bfc3ecd9d1e"},
+    {file = "intel_openmp-2021.3.0-py2.py3-none-win32.whl", hash = "sha256:3b8905d7ff81e3a1aa6f61a5d07b8bc19cbaf7735554018309cefc7476c172d3"},
+    {file = "intel_openmp-2021.3.0-py2.py3-none-win_amd64.whl", hash = "sha256:1b798512634e6c92911505f2f73002d85b663125cccb77700e4d43383df1a8c5"},
+]
+mkl = [
+    {file = "mkl-2021.3.0-py2.py3-none-macosx_10_15_x86_64.macosx_11_0_x86_64.whl", hash = "sha256:783104af8a75f1a110bd1e2b8af1ba46b0601337f72c61a2f394b3a32f8edd96"},
+    {file = "mkl-2021.3.0-py2.py3-none-manylinux1_i686.whl", hash = "sha256:02600f0e492ddb20f9962e225264824f9487062cc63c0a5bb5b6629a665e373a"},
+    {file = "mkl-2021.3.0-py2.py3-none-manylinux1_x86_64.whl", hash = "sha256:20c74e9bc659b67006a0e1339f0ee022afe43236c05156894bcef2cad8d4c8a9"},
+    {file = "mkl-2021.3.0-py2.py3-none-win32.whl", hash = "sha256:00812c181c083a7da13cced1cf95e5af1fdb209679997bc14ee9c599f44712d2"},
+    {file = "mkl-2021.3.0-py2.py3-none-win_amd64.whl", hash = "sha256:f6d45341ecd327e4638f98c11c537d6b45b293ba6d661120b40d02fe3eb6c1e6"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
@@ -162,12 +160,10 @@ six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
 ]
-typing-extensions = [
-    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
-    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
-    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
-]
-zipp = [
-    {file = "zipp-3.5.0-py3-none-any.whl", hash = "sha256:957cfda87797e389580cb8b9e3870841ca991e2125350677b2ca83a0e99390a3"},
-    {file = "zipp-3.5.0.tar.gz", hash = "sha256:f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"},
+tbb = [
+    {file = "tbb-2021.3.0-py2.py3-none-macosx_10_15_x86_64.macosx_11_0_x86_64.whl", hash = "sha256:62825f367b8e0848874952ab8e77e8f9e2d3aa95e522c89b35c6051eecd764df"},
+    {file = "tbb-2021.3.0-py2.py3-none-manylinux1_i686.whl", hash = "sha256:157223ba8263a724b2b4f4dc6d328cc902bd521c0bb771947b7bdc3cef506cec"},
+    {file = "tbb-2021.3.0-py2.py3-none-manylinux1_x86_64.whl", hash = "sha256:4ac221b0a7ab02a41fdf3d6d973d920cf6d34263a50be09b602dcf73c043de6a"},
+    {file = "tbb-2021.3.0-py3-none-win32.whl", hash = "sha256:9c437df15834a2c9f5a6e95968e23ce5435cc88fdb3866d95e877f7ecc8b9b8b"},
+    {file = "tbb-2021.3.0-py3-none-win_amd64.whl", hash = "sha256:782722c0a6410f62f6f6b7bfe394b0c8491ef8b032fbc036d29823a6e508c85d"},
 ]
