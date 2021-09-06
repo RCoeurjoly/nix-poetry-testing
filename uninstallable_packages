@@ -140,3 +140,4 @@ databricks-connect
 annoy
 yappi
 python-ldap
+python-crfsuite
