@@ -208,3 +208,4 @@ ruamel-ordereddict
 pycocotools
 pysaml2
 azureml-designer-serving
+python-geohash
