@@ -21,6 +21,52 @@ tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)"
 tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins"]
 
 [[package]]
+name = "autowrapt"
+version = "1.0"
+description = "Boostrap mechanism for monkey patches."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+wrapt = ">=1.10.4"
+
+[[package]]
+name = "basictracer"
+version = "3.2.0"
+description = ""
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+opentracing = ">=2.0,<3.0"
+protobuf = ">=3.0.0b2"
+six = ">=1.10.0,<2.0"
+
+[package.extras]
+tests = ["flake8", "flake8-quotes", "mock (<1.1.0)", "pytest", "pytest-cov", "pytest-mock", "sphinx", "sphinx-rtd-theme"]
+
+[[package]]
+name = "certifi"
+version = "2021.5.30"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "charset-normalizer"
+version = "2.0.4"
+description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
+category = "main"
+optional = false
+python-versions = ">=3.5.0"
+
+[package.extras]
+unicode_backport = ["unicodedata2"]
+
+[[package]]
 name = "colorama"
 version = "0.4.4"
 description = "Cross-platform colored terminal text."
@@ -29,21 +75,38 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
-name = "importlib-metadata"
-version = "4.6.3"
-description = "Read metadata from Python packages"
-category = "dev"
+name = "fysom"
+version = "2.1.5"
+description = "pYthOn Finite State Machine"
+category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = "*"
+
+[[package]]
+name = "idna"
+version = "3.2"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
+name = "instana"
+version = "1.35.1"
+description = "🐍 Python Distributed Tracing & Metrics Sensor for Instana"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
-typing-extensions = {version = ">=3.6.4", markers = "python_version < \"3.8\""}
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-perf = ["ipython"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pep517", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
+autowrapt = ">=1.0"
+basictracer = ">=3.1.0"
+certifi = ">=2018.4.16"
+fysom = ">=2.1.2"
+opentracing = ">=2.3.0"
+requests = ">=2.6.0"
+six = ">=1.12.0"
+urllib3 = ">=1.21.1,<1.27"
 
 [[package]]
 name = "more-itertools"
@@ -54,6 +117,17 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
+name = "opentracing"
+version = "2.4.0"
+description = "OpenTracing API for Python. See documentation at http://opentracing.io"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+tests = ["doubles", "flake8", "flake8-quotes", "mock", "pytest", "pytest-cov", "pytest-mock", "sphinx", "sphinx-rtd-theme", "six (>=1.10.0,<2.0)", "gevent", "tornado"]
+
+[[package]]
 name = "pluggy"
 version = "0.13.1"
 description = "plugin and hook calling mechanisms for python"
@@ -61,11 +135,19 @@ category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
-[package.dependencies]
-importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
-
 [package.extras]
 dev = ["pre-commit", "tox"]
+
+[[package]]
+name = "protobuf"
+version = "4.0.0rc2"
+description = "Protocol Buffers"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+six = ">=1.9"
 
 [[package]]
 name = "py"
@@ -93,37 +175,56 @@ py = ">=1.5.0"
 six = ">=1.10.0"
 
 [[package]]
+name = "requests"
+version = "2.26.0"
+description = "Python HTTP for Humans."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+charset-normalizer = {version = ">=2.0.0,<2.1.0", markers = "python_version >= \"3\""}
+idna = {version = ">=2.5,<4", markers = "python_version >= \"3\""}
+urllib3 = ">=1.21.1,<1.27"
+
+[package.extras]
+socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
+use_chardet_on_py3 = ["chardet (>=3.0.2,<5)"]
+
+[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
-name = "typing-extensions"
-version = "3.10.0.0"
-description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "dev"
+name = "urllib3"
+version = "1.26.6"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
+
+[package.extras]
+brotli = ["brotlipy (>=0.6.0)"]
+secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "ipaddress"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
+
+[[package]]
+name = "wrapt"
+version = "1.12.1"
+description = "Module for decorators, wrappers and monkey patching."
+category = "main"
 optional = false
 python-versions = "*"
 
-[[package]]
-name = "zipp"
-version = "3.5.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
-
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.6,<4.0"
-content-hash = "baa316f47ed96d789a82fdba9500ec558108a9f5e332cf1705c58057f76ce217"
+python-versions = ">=3.9,<3.10"
+content-hash = "b530401bdbff674efe99619df7f02a34c02d6702a25c101dd96368e69c3b06e0"
 
 [metadata.files]
 atomicwrites = [
@@ -134,21 +235,65 @@ attrs = [
     {file = "attrs-21.2.0-py2.py3-none-any.whl", hash = "sha256:149e90d6d8ac20db7a955ad60cf0e6881a3f20d37096140088356da6c716b0b1"},
     {file = "attrs-21.2.0.tar.gz", hash = "sha256:ef6aaac3ca6cd92904cdd0d83f629a15f18053ec84e6432106f7a4d04ae4f5fb"},
 ]
+autowrapt = [
+    {file = "autowrapt-1.0.tar.gz", hash = "sha256:a0dcd0092477bb22e391f136659cc7f716da06ebda66a8b51ae4955cab0f97a2"},
+]
+basictracer = [
+    {file = "basictracer-3.2.0.tar.gz", hash = "sha256:ef14dc0101091003e52ae349bcb2ea1923832fa0cdc60f8e47b1b5ec72bcafae"},
+]
+certifi = [
+    {file = "certifi-2021.5.30-py2.py3-none-any.whl", hash = "sha256:50b1e4f8446b06f41be7dd6338db18e0990601dce795c2b1686458aa7e8fa7d8"},
+    {file = "certifi-2021.5.30.tar.gz", hash = "sha256:2bbf76fd432960138b3ef6dda3dde0544f27cbf8546c458e60baf371917ba9ee"},
+]
+charset-normalizer = [
+    {file = "charset-normalizer-2.0.4.tar.gz", hash = "sha256:f23667ebe1084be45f6ae0538e4a5a865206544097e4e8bbcacf42cd02a348f3"},
+    {file = "charset_normalizer-2.0.4-py3-none-any.whl", hash = "sha256:0c8911edd15d19223366a194a513099a302055a962bca2cec0f54b8b63175d8b"},
+]
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
-importlib-metadata = [
-    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
-    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
+fysom = [
+    {file = "fysom-2.1.5.tar.gz", hash = "sha256:f270b0cbd6e40721ef04340419598affdb2e7b981deb27b59551c5bca2535c34"},
+]
+idna = [
+    {file = "idna-3.2-py3-none-any.whl", hash = "sha256:14475042e284991034cb48e06f6851428fb14c4dc953acd9be9a5e95c7b6dd7a"},
+    {file = "idna-3.2.tar.gz", hash = "sha256:467fbad99067910785144ce333826c71fb0e63a425657295239737f7ecd125f3"},
+]
+instana = [
+    {file = "instana-1.35.1-py2.py3-none-any.whl", hash = "sha256:8c8bf5faa27270092ce966dd99ba7f0126b662797bb32d1772648c50d77dfc02"},
+    {file = "instana-1.35.1.tar.gz", hash = "sha256:d5d3f35ca83d98fcf86ca366c0a9869eee8e470e78b1316ed3d49cec87590ccd"},
 ]
 more-itertools = [
     {file = "more-itertools-8.8.0.tar.gz", hash = "sha256:83f0308e05477c68f56ea3a888172c78ed5d5b3c282addb67508e7ba6c8f813a"},
     {file = "more_itertools-8.8.0-py3-none-any.whl", hash = "sha256:2cf89ec599962f2ddc4d568a05defc40e0a587fbc10d5989713638864c36be4d"},
 ]
+opentracing = [
+    {file = "opentracing-2.4.0.tar.gz", hash = "sha256:a173117e6ef580d55874734d1fa7ecb6f3655160b8b8974a2a1e98e5ec9c840d"},
+]
 pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
     {file = "pluggy-0.13.1.tar.gz", hash = "sha256:15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0"},
+]
+protobuf = [
+    {file = "protobuf-4.0.0rc2-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:9504227ca529d20e6ca8cc39f710e52f3237fc7445b63f9621176078c899421d"},
+    {file = "protobuf-4.0.0rc2-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:a12c97c8ed2ab4cc937e3c07b0b9180e68464831f808996f779b1d58f4cf16b5"},
+    {file = "protobuf-4.0.0rc2-cp35-cp35m-macosx_10_9_intel.whl", hash = "sha256:c32f0d70403ce887549e33668cbe26c3fa9d9884582bb5afae3064de5a16c084"},
+    {file = "protobuf-4.0.0rc2-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:0faa899ac58036766f7a36bf6b3f41459e4eefa20477ee004bdbb6e6c01ad2dc"},
+    {file = "protobuf-4.0.0rc2-cp35-cp35m-win32.whl", hash = "sha256:864f0d7622e11d9255c45542e47498a9c59dfda716dde8b204f64fa7887cbfad"},
+    {file = "protobuf-4.0.0rc2-cp35-cp35m-win_amd64.whl", hash = "sha256:7e44ac88d7bdfd7bca8ba0623a934a564220d78bbe064005264f747dec330c26"},
+    {file = "protobuf-4.0.0rc2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:5111dc2fb3236584b79645869475448c2181e54e4d6db7c0fc1fe463a7cdb092"},
+    {file = "protobuf-4.0.0rc2-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:956f2c06cff88f65e4856864b31bc688c3c8b9077aaac611b521f04d5657c755"},
+    {file = "protobuf-4.0.0rc2-cp36-cp36m-win32.whl", hash = "sha256:0da07c5ff6e2d681c8692dddd38f2ea424aff79e96a4776dbbcbd1b56ced3d83"},
+    {file = "protobuf-4.0.0rc2-cp36-cp36m-win_amd64.whl", hash = "sha256:0b4a44a32247c3f222df0a5994ed763095ead741fb0749c6105e2a1af100ac98"},
+    {file = "protobuf-4.0.0rc2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:abc7aa2652a66bf06a34b382638b3319c8d6b67832f4adaed1da1fdad7aa90c0"},
+    {file = "protobuf-4.0.0rc2-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:e56466b878130fa606f1d4465f3f533144be2b927e9dfc2eb23dba0bb4b5d54c"},
+    {file = "protobuf-4.0.0rc2-cp37-cp37m-win32.whl", hash = "sha256:b05dcdb57c1ca6a503121a266bfb7399582f08be00ccc50cd333bdd3d5e66adc"},
+    {file = "protobuf-4.0.0rc2-cp37-cp37m-win_amd64.whl", hash = "sha256:576fdebb64c900ac38d98d703a5ffaa135c21112608466c5bc4048714ac96d1a"},
+    {file = "protobuf-4.0.0rc2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:666d4b942b77912d00c8b011986ee73224ff58d9e17cbb42ef851968ce7e0398"},
+    {file = "protobuf-4.0.0rc2-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:c8fab21597c174389ebe1e6db442c80aadda8bd0159e953eb4958c55b33a91fa"},
+    {file = "protobuf-4.0.0rc2-py2.py3-none-any.whl", hash = "sha256:5df64b064b1b15e03768295939cbb5595733a02e8945dc033e56c6a9667a225c"},
+    {file = "protobuf-4.0.0rc2.tar.gz", hash = "sha256:03346c1fdaaaece437f2b611f3f784114b109985aea65c7d98050f8d38fe671c"},
 ]
 py = [
     {file = "py-1.10.0-py2.py3-none-any.whl", hash = "sha256:3b80836aa6d1feeaa108e046da6423ab8f6ceda6468545ae8d02d9d58d18818a"},
@@ -158,16 +303,18 @@ pytest = [
     {file = "pytest-3.10.1-py2.py3-none-any.whl", hash = "sha256:3f193df1cfe1d1609d4c583838bea3d532b18d6160fd3f55c9447fdca30848ec"},
     {file = "pytest-3.10.1.tar.gz", hash = "sha256:e246cf173c01169b9617fc07264b7b1316e78d7a650055235d6d897bc80d9660"},
 ]
+requests = [
+    {file = "requests-2.26.0-py2.py3-none-any.whl", hash = "sha256:6c1246513ecd5ecd4528a0906f910e8f0f9c6b8ec72030dc9fd154dc1a6efd24"},
+    {file = "requests-2.26.0.tar.gz", hash = "sha256:b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b01b07a7"},
+]
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
 ]
-typing-extensions = [
-    {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
-    {file = "typing_extensions-3.10.0.0-py3-none-any.whl", hash = "sha256:779383f6086d90c99ae41cf0ff39aac8a7937a9283ce0a414e5dd782f4c94a84"},
-    {file = "typing_extensions-3.10.0.0.tar.gz", hash = "sha256:50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"},
+urllib3 = [
+    {file = "urllib3-1.26.6-py2.py3-none-any.whl", hash = "sha256:39fb8672126159acb139a7718dd10806104dec1e2f0f6c88aab05d17df10c8d4"},
+    {file = "urllib3-1.26.6.tar.gz", hash = "sha256:f57b4c16c62fa2760b7e3d97c35b255512fb6b59a259730f36ba32ce9f8e342f"},
 ]
-zipp = [
-    {file = "zipp-3.5.0-py3-none-any.whl", hash = "sha256:957cfda87797e389580cb8b9e3870841ca991e2125350677b2ca83a0e99390a3"},
-    {file = "zipp-3.5.0.tar.gz", hash = "sha256:f5812b1e007e48cff63449a5e9f4e7ebea716b4111f9c4f9a645f91d579bf0c4"},
+wrapt = [
+    {file = "wrapt-1.12.1.tar.gz", hash = "sha256:b62ffa81fb85f4332a4f609cab4ac40709470da05643a082ec1eb88e6d9b97d7"},
 ]
