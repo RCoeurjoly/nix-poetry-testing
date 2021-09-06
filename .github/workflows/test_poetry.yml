@@ -14,5 +14,9 @@ jobs:
         extra_nix_config: |
           experimental-features = nix-command flakes
           access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-    - run: nix develop
-    - run: poetry add ${{ github.head_ref }}
+    - name: get branch name
+      id: get_branch_name
+      run: echo ::set-output name=branch_name::${{ github.head_ref }}
+    - name: Check output
+      run: echo ${{ steps.get_branch_name.outputs.branch_name }}
+    - run: nix develop && poetry add ${{ steps.get_branch_name.outputs.branch_name }}

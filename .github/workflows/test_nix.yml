@@ -17,6 +17,4 @@ jobs:
         extra_nix_config: |
           experimental-features = nix-command flakes
           access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-    - run: nix develop
-    - run: poetry add ${{ github.head_ref }}
-    - run: nix develop
+    - run: nix develop && poetry add ${{ github.head_ref }} && nix develop
