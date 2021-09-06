@@ -141,3 +141,4 @@ annoy
 yappi
 python-ldap
 python-crfsuite
+jwcrypto
