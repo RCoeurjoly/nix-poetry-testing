@@ -30,7 +30,7 @@
           # Notice the reference to nixpkgs here.
           with import nixpkgs { system = "x86_64-linux"; };
           stdenv.mkDerivation {
-            name = "lol"
+            name = "lol";
           };
 
         devShell = pkgs.mkShell {
