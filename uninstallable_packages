@@ -173,3 +173,4 @@ ansible-base
 azure-multiapi-storage
 azure-mgmt-imagebuilder
 azure-mgmt-sqlvirtualmachine
+apache-airflow-backport-providers-amazon
