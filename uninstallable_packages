@@ -112,3 +112,4 @@ txaws
 dopamine-rl
 azureml-train-core
 sshpubkeys
+azureml-pipeline-core
