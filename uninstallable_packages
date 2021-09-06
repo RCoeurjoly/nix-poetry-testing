@@ -236,3 +236,4 @@ gsecrets
 thriftpy2
 spotify-tensorflow
 molecule
+azureml-defaults
