@@ -290,3 +290,4 @@ rasa
 smbprotocol
 ibm-db
 apache-airflow-providers-amazon
+gsutil
