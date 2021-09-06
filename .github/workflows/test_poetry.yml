@@ -16,5 +16,6 @@ jobs:
           access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
     - name: Get branch name
       uses: nelonoel/branch-name@v1.0.1
-    - run: nix develop
-    - run: poetry add ${BRANCH_NAME}
+    - run: |
+        nix develop
+        poetry add ${BRANCH_NAME}
