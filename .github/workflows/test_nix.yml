@@ -1,14 +1,9 @@
 name: "Test nix"
 on:
-  workflow_run:
-    workflows: ["Test poetry"]
-    branches:
-      - '**'
-    types:
-      - completed
+  pull_request:
+  push:
 jobs:
   tests:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.3.4
