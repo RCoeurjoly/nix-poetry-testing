@@ -64,6 +64,49 @@ test_packages () {
     done
 }
 
+test_packages_simple () {
+    OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+    # If no argument, parse big json
+    if [ "$#" -eq 0 ]; then
+        packages=$(cat packages.json | jq .rows[].project)
+    fi
+
+    while getopts ":f:p:h" o; do
+        case "${o}" in
+            f)
+                packages=$(cat "$OPTARG" | jq .rows[].project)
+                ;;
+            p)
+                packages="$OPTARG"
+                ;;
+            h)
+                echo usage
+                ;;
+            *)
+                echo fail
+                ;;
+        esac
+    done
+
+    shift $((OPTIND-1))
+
+    for quoted_package in $packages
+    do
+        unquoted_package=${quoted_package//\"}
+        git rev-parse --quiet --verify $unquoted_package
+        rc=$?
+        if [[ $rc = 0 ]]; then
+            echo Package $unquoted_package is already handled
+        else
+            git checkout -b $unquoted_package
+            git push -f
+        fi
+    done
+}
+
+
+
 add_package_to_uninstallable_list() {
     uninstallable_package=$1
     echo $uninstallable_package >> uninstallable_packages
