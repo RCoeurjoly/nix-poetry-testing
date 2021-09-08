@@ -13225,8 +13225,8 @@
         },
         {
             "download_count": 82465,
-    "project": "pytype"
-},
+            "project": "pytype"
+        },
         {
             "download_count": 82410,
             "project": "dataset"
@@ -13269,8 +13269,8 @@
         },
         {
             "download_count": 81985,
-    "project": "happybase"
-},
+            "project": "happybase"
+        },
         {
             "download_count": 81980,
             "project": "symspellpy"
@@ -13313,8 +13313,8 @@
         },
         {
             "download_count": 81287,
-    "project": "cloudfoundry-client"
-},
+            "project": "cloudfoundry-client"
+        },
         {
             "download_count": 81267,
             "project": "collectfast"
@@ -13357,8 +13357,8 @@
         },
         {
             "download_count": 80910,
-    "project": "ndjson"
-},
+            "project": "ndjson"
+        },
         {
             "download_count": 80815,
             "project": "databand"
@@ -13401,8 +13401,8 @@
         },
         {
             "download_count": 80547,
-    "project": "androguard"
-},
+            "project": "androguard"
+        },
         {
             "download_count": 80512,
             "project": "django-autoslug"
@@ -13445,8 +13445,8 @@
         },
         {
             "download_count": 80027,
-    "project": "pyobjc-framework-cocoa"
-},
+            "project": "pyobjc-framework-cocoa"
+        },
         {
             "download_count": 80013,
             "project": "flask-debugtoolbar"
@@ -13489,8 +13489,8 @@
         },
         {
             "download_count": 79698,
-    "project": "pubnub"
-},
+            "project": "pubnub"
+        },
         {
             "download_count": 79649,
             "project": "parameters-validation"
@@ -13533,8 +13533,8 @@
         },
         {
             "download_count": 79103,
-    "project": "nbval"
-},
+            "project": "nbval"
+        },
         {
             "download_count": 79072,
             "project": "sphinxcontrib-spelling"
@@ -13577,8 +13577,8 @@
         },
         {
             "download_count": 78902,
-    "project": "jsonform"
-},
+            "project": "jsonform"
+        },
         {
             "download_count": 78899,
             "project": "jsonsir"
@@ -13621,8 +13621,8 @@
         },
         {
             "download_count": 78528,
-    "project": "stegano"
-},
+            "project": "stegano"
+        },
         {
             "download_count": 78499,
             "project": "docx"
@@ -13665,8 +13665,8 @@
         },
         {
             "download_count": 78242,
-    "project": "oauth2-client"
-},
+            "project": "oauth2-client"
+        },
         {
             "download_count": 78229,
             "project": "pygeoip"
@@ -13709,8 +13709,8 @@
         },
         {
             "download_count": 77821,
-    "project": "python-dynamodb-lock"
-},
+            "project": "python-dynamodb-lock"
+        },
         {
             "download_count": 77660,
             "project": "serverless-wsgi"
@@ -13753,8 +13753,8 @@
         },
         {
             "download_count": 77036,
-    "project": "hana-ml"
-},
+            "project": "hana-ml"
+        },
         {
             "download_count": 77035,
             "project": "anytemplate"
@@ -13797,8 +13797,8 @@
         },
         {
             "download_count": 76606,
-    "project": "pykcs11"
-},
+            "project": "pykcs11"
+        },
         {
             "download_count": 76565,
             "project": "elasticsearch7"
@@ -13841,8 +13841,8 @@
         },
         {
             "download_count": 76255,
-    "project": "first"
-},
+            "project": "first"
+        },
         {
             "download_count": 76171,
             "project": "qiskit-terra"
@@ -13885,8 +13885,8 @@
         },
         {
             "download_count": 75813,
-    "project": "pyprivnote"
-},
+            "project": "pyprivnote"
+        },
         {
             "download_count": 75790,
             "project": "pyangbind"
@@ -13929,8 +13929,8 @@
         },
         {
             "download_count": 75426,
-    "project": "paramz"
-},
+            "project": "paramz"
+        },
         {
             "download_count": 75392,
             "project": "lookml"
@@ -13973,8 +13973,8 @@
         },
         {
             "download_count": 74959,
-    "project": "flake8-colors"
-},
+            "project": "flake8-colors"
+        },
         {
             "download_count": 74853,
             "project": "mangum"
@@ -14017,8 +14017,8 @@
         },
         {
             "download_count": 74519,
-    "project": "keras-mxnet"
-},
+            "project": "keras-mxnet"
+        },
         {
             "download_count": 74505,
             "project": "dbnd-airflow-operator"
@@ -14061,8 +14061,8 @@
         },
         {
             "download_count": 74177,
-    "project": "amundsen-common"
-},
+            "project": "amundsen-common"
+        },
         {
             "download_count": 74175,
             "project": "categorical-distance"
@@ -14105,8 +14105,8 @@
         },
         {
             "download_count": 73780,
-    "project": "daemonize"
-},
+            "project": "daemonize"
+        },
         {
             "download_count": 73774,
             "project": "mypy-boto3-lambda"
@@ -14149,8 +14149,8 @@
         },
         {
             "download_count": 73342,
-    "project": "lyrics-extractor"
-},
+            "project": "lyrics-extractor"
+        },
         {
             "download_count": 73299,
             "project": "circus"
@@ -14193,8 +14193,8 @@
         },
         {
             "download_count": 72803,
-    "project": "pandas-redshift"
-},
+            "project": "pandas-redshift"
+        },
         {
             "download_count": 72800,
             "project": "splinter"
@@ -14237,8 +14237,8 @@
         },
         {
             "download_count": 72301,
-    "project": "pybtex-docutils"
-},
+            "project": "pybtex-docutils"
+        },
         {
             "download_count": 72297,
             "project": "getch"
@@ -14281,8 +14281,8 @@
         },
         {
             "download_count": 71917,
-    "project": "easygui"
-},
+            "project": "easygui"
+        },
         {
             "download_count": 71834,
             "project": "wordninja"
@@ -14325,8 +14325,8 @@
         },
         {
             "download_count": 71602,
-    "project": "datetime-distance"
-},
+            "project": "datetime-distance"
+        },
         {
             "download_count": 71503,
             "project": "dash-cytoscape"
@@ -14369,8 +14369,8 @@
         },
         {
             "download_count": 70835,
-    "project": "namedlist"
-},
+            "project": "namedlist"
+        },
         {
             "download_count": 70776,
             "project": "pytest-github-actions-annotate-failures"
@@ -14413,8 +14413,8 @@
         },
         {
             "download_count": 70310,
-    "project": "kubernetes-validate"
-},
+            "project": "kubernetes-validate"
+        },
         {
             "download_count": 70010,
             "project": "python-miio"
@@ -14457,8 +14457,8 @@
         },
         {
             "download_count": 69395,
-    "project": "quart-cors"
-},
+            "project": "quart-cors"
+        },
         {
             "download_count": 69358,
             "project": "ezdxf"
@@ -14501,8 +14501,8 @@
         },
         {
             "download_count": 68730,
-    "project": "upload"
-},
+            "project": "upload"
+        },
         {
             "download_count": 68694,
             "project": "ntc-templates"
@@ -14545,8 +14545,8 @@
         },
         {
             "download_count": 68396,
-    "project": "pyqtgraph"
-},
+            "project": "pyqtgraph"
+        },
         {
             "download_count": 68381,
             "project": "django-url-filter"
@@ -14589,8 +14589,8 @@
         },
         {
             "download_count": 68060,
-    "project": "icdiff"
-},
+            "project": "icdiff"
+        },
         {
             "download_count": 67978,
             "project": "azure-mgmt-resourcegraph"
@@ -14633,8 +14633,8 @@
         },
         {
             "download_count": 67653,
-    "project": "expecttest"
-},
+            "project": "expecttest"
+        },
         {
             "download_count": 67604,
             "project": "django-sekizai"
