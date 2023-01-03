@@ -33,7 +33,7 @@
             name = "lol";
           };
 
-        devShell = pkgs.mkShell {
+        devShells.${system}.default = pkgs.mkShell {
           buildInputs = with pkgs; [ poetry jq ];
           inputsFrom = builtins.attrValues self.packages.${system};
         };
