@@ -4,9 +4,13 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
+    flake-compat = {
+      url = "github:edolstra/flake-compat";
+      flake = false;
+    };
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
+  outputs = { self, nixpkgs, flake-utils, flake-compat }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
@@ -33,9 +37,9 @@
             name = "lol";
           };
 
-        devShell = pkgs.mkShell {
+        devShells.${system}.default = pkgs.myAppEnv.env.overrideAttrs (oldAttrs: {
           buildInputs = with pkgs; [ poetry jq ];
           inputsFrom = builtins.attrValues self.packages.${system};
-        };
+        });
       });
 }
